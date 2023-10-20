@@ -1,5 +1,5 @@
-# Apple Keynote Bingo
+# GitHub Universe Keynote Bingo
 
-Our snarky bingo game for Apple Keynotes.
+Our snarky bingo game for GitHub Universe Keynotes.
 
-![Screenshot](https://keynotebingo.github.io/static/images/share.jpg)
+![Screenshot](/workspaces/keynotebingo.github.io/static/images/bingo_card.png)
