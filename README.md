@@ -2,4 +2,4 @@
 
 Our snarky bingo game for GitHub Universe Keynotes.
 
-![Screenshot](/workspaces/keynotebingo.github.io/static/images/bingo_card.png)
+![Screenshot](https://github.com/ashleymcnamara/keynotebingo.github.io/blob/master/static/images/bingo_card.png)
