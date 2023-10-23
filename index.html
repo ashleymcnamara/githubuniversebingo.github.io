@@ -2,13 +2,16 @@
 <html lang="en">
 
 <head>
+    <!-- Basic metadata and SEO information -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>GitHub Universe Bingo!</title>
+    <!-- Additional metadata for social sharing -->
     <meta name="description" content="Play GitHub Universe Bingo!">
     <meta property="og:title" content="GitHub Universe Bingo!">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="GitHub Universe Bingo!">
+
     <meta property="og:url" content="https://keynotebingo.github.io/">
     <meta property="og:description" content="It's time to play GitHub Universe Bingo!">
     <meta property="og:image" content="static/images/share.jpg">
@@ -17,14 +20,17 @@
     <meta name="twitter:title" content="GitHub Universe Bingo!">
     <meta name="twitter:description" content="It's time to play GitHub Universe Bingo!">
     <meta name="twitter:image" content="static/images/share.jpg">
+    <!-- Linking the main stylesheet -->
     <link rel="stylesheet" href="static/styles/styles.css">
     <link rel="shortcut icon" type="image/png" href="static/images/github-logo.png">
     <link rel="apple-touch-icon-precomposed" href="static/images/github-logo.png">
+    <!-- Google Analytics setup -->
     <script>
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-29707119-1']);
         _gaq.push(['_trackPageview']);
         (function () {
+            // Inserting Google Analytics script asynchronously
             var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
@@ -33,25 +39,27 @@
 </head>
 
 <body>
+    <!-- Image Section at the top -->
     <div id="imageSection">
         <img src="static/images/universe_header.webp" alt="universe footer" class="responsive-img">
     </div>
+    <!-- Main content container -->
     <div class="container-fluid">
+        <!-- Header Section -->
         <header>
             <h1 class="my-4 display-4">GitHub Universe Bingo!</h1>
             <h2 class="mb-4 h5">California Streaming - November 2023</h2>
         </header>
+        <!-- Bingo announcement div, initially hidden -->
         <div id="bingo">
             <h1 class="my-4 display-1">BINGO!</h1>
             <a class="btn btn-primary" href="?">Play again?</a>
         </div>
+        <!-- Bingo announcement div, initially hidden -->
         <table id="bingoCard" class="table-responsive my-4 mx-auto">
             <tbody id="playCard"></tbody>
         </table>
-        <table id="bingoCard" class="table-responsive my-4 mx-auto">
-            <tbody id="playCard"></tbody>
-        </table>
-        <!-- New Section for Image -->
+        <!-- Footer Section -->
         <footer>
             <a class="btn btn-outline-success mr-2 new-bingo-card" href="?">New Bingo Card</a>
             <a class="btn btn-outline-primary custom-primary ml-2" target="_blank"
@@ -59,7 +67,9 @@
                 Tweet
                 This
             </a>
+            <!-- Footer Section -->
             <p class="mt-4 small">
+
                 Made with love by
                 <a target="_blank" href="http://twitter.com/ashleymcnamara">@ashleymcnamara</a>
             </p>
