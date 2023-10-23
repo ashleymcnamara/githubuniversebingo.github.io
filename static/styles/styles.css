@@ -272,7 +272,8 @@ button,
 [type="reset"],
 [type="submit"] {
     -webkit-appearance: button;
-    appearance: button; /* Standard syntax */
+    appearance: button;
+    /* Standard syntax */
     /* Reset other properties */
     border: none;
     background-color: blue;
@@ -306,11 +307,11 @@ input[type="datetime-local"],
 input[type="month"] {
     -webkit-appearance: listbox;
     -webkit-appearance: listbox;
-  appearance: listbox;
-  /* Add your additional styles here */
-  border: 1px solid #ccc;
-  padding: 5px;
-  background-color: #fff;
+    appearance: listbox;
+    /* Add your additional styles here */
+    border: 1px solid #ccc;
+    padding: 5px;
+    background-color: #fff;
 }
 
 textarea {
@@ -6547,6 +6548,28 @@ table#bingoCard td.marked-free {
 table#bingoCard td.marked-free div {
     font-size: 3em;
     line-height: 1em
+}
+
+.new-bingo-card {
+    border-color: #4ac26b !important;
+    color: #4ac26b !important;
+}
+
+.new-bingo-card:hover {
+    background-color: #4ac26b !important;
+    color: white !important;
+}
+
+.custom-primary {
+    border-color: #046bde !important;
+    color: #046bde !important;
+}
+
+.custom-primary:hover,
+.custom-primary:focus,
+.custom-primary:active {
+    background-color: #046bde !important;
+    color: #ffffff !important;
 }
 
 #bingo {
