@@ -11,12 +11,12 @@ GitHub Universe Bingo is a delightful twist on the traditional bingo game, speci
 1. **Grab Your Bingo Card**: You can access your GitHub Universe Bingo card [here](). Make sure to keep it handy during the event.
 2. **Attend GitHub Universe**: Tune in to GitHub Universe on November 8—9 and immerse yourself in the world of tech, just as you normally would.
 3. **Mark the Squares**: As you navigate the conference, keep an eye out for moments that match the squares on your card. When you spot one, click on the square to mark it.
-4. **Bingo!**: Your goal is to complete a row, column, or diagonal on your card. When you do, shout "Bingo!" (or type it in the chat, we won't judge). You're a winner!
+4. **Bingo!**: Your goal is to complete a row, column, or diagonal on your card. When you do, shout *"Bingo!"* (or type it in the chat, we won't judge). You're a winner!
 5. **Share Your Victory**: Bragging rights are essential. Share your victory on social media with the hashtag #GitHubBingo and let the world know you conquered GitHub Universe in style.
 
 ## What's on the Bingo Card?
 
-Expect a mix of tech, humor, and the peculiarities of tech conferences. From "Awkward High-Five Attempt" to "Wi-Fi Woes," our squares cover the full spectrum of conference experiences. Plus, we've thrown in some GitHub-themed squares for good measure.
+Expect a mix of tech, humor, and the peculiarities of tech conferences. From *"Awkward High-Five Attempt"* to *"Wi-Fi Woes,"* our squares cover the full spectrum of conference experiences. Plus, we've thrown in some GitHub-themed squares for good measure.
 
 ## Disclaimer
 
