@@ -197,29 +197,35 @@
 
 
         ]
-
+        // Shuffle function to randomize an array
         function shuffle(array) {
             var currentIndex = array.length;
             var temporaryValue;
             var randomIndex;
+            // While loop to shuffle the array
             while (0 !== currentIndex) {
                 randomIndex = Math.floor(Math.random() * currentIndex);
                 currentIndex -= 1;
+                // Swap array elements
                 temporaryValue = array[currentIndex];
                 array[currentIndex] = array[randomIndex];
                 array[randomIndex] = temporaryValue;
             }
             return array;
         }
-
+        // Shuffle the 'strings' array and store it in 'shuffled_strings'
         var shuffled_strings = shuffle(strings);
+        // Get the playCard element from the DOM
         el_playcard = document.getElementById('playCard');
+        // Loop to create rows and columns
         for (var row = 0; row < 5; row += 1) {
             el_row = el_playcard.insertRow(-1);
 
             for (var col = 0; col < 5; col += 1) {
                 el_cell = el_row.insertCell(0);
+                // Check for the "Free Space" at the center of the grid
                 if (row == 2 && col == 2) {
+                    // Populate cells with shuffled strings and add click event
                     el_cell.innerHTML = 'Free<br /><br /><br /><br />Space';
                     el_cell.classList.add('marked');
                     el_cell.classList.add('marked-free');
@@ -230,7 +236,7 @@
                 }
             }
         }
-
+        // Initialize counters and load audio files
         var bingo_counter = 0;
 
         var marked_sound = new Audio('static/sounds/pop.wav');
@@ -238,26 +244,52 @@
         var bingo_sound = new Audio('static/sounds/win.wav');
         bingo_sound.load();
 
+        // Initialize row, column and diagonal counters for Bingo
+        var row_count = [0, 0, 1, 0, 0];  // Row with index 2 starts with a count of 1
+        var col_count = [0, 0, 1, 0, 0];  // Column with index 2 starts with a count of 1
+        var diag_count = [1, 1];  // Both diagonals start with a count of 1
+        var bingo_counter = 0;
+        // Function to mark a cell and check for Bingo conditions
         function mark_cell(cell) {
+            // Get row and column index of the clicked cell
+            var rowIndex = cell.srcElement.parentElement.rowIndex;
+            var colIndex = cell.srcElement.cellIndex;
+
+            // Increment counters based on the clicked cell's position
+            row_count[rowIndex]++;
+            col_count[colIndex]++;
+
+            // Update the diagonal counters if applicable
+            if (rowIndex === colIndex) {
+                diag_count[0]++;
+            }
+            if (rowIndex + colIndex === 4) {
+                diag_count[1]++;
+            }
+
+            // Remove click event and mark the cell as 'marked'
             cell.srcElement.removeEventListener('click', mark_cell);
             cell.srcElement.classList.add('marked');
             bingo_counter++;
 
-            if (bingo_counter === 24) {
+            // Check for winning conditions
+            if (row_count.includes(5) || col_count.includes(5) || diag_count.includes(5)) {
+                // Your existing win code here...
                 document.querySelectorAll('td').forEach(function (e) {
                     e.classList.add('rotate-out');
                 });
                 bingo_sound.play();
+                // Display the 'Play Again' button after animation
                 window.setTimeout(function () {
-                    play_again = document.getElementById('bingo');
+                    var play_again = document.getElementById('bingo');
                     play_again.classList.add('bounce-in');
                     play_again.style.display = 'block';
 
-                    bingoCard = document.getElementById('bingoCard');
+                    var bingoCard = document.getElementById('bingoCard');
                     bingoCard.style.visibility = 'hidden';
                 }, 400);
-            }
-            else {
+            } else {
+                // Play the marking sound
                 marked_sound.play();
             }
         }
