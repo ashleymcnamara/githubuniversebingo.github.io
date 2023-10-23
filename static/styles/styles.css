@@ -6539,6 +6539,11 @@ table#bingoCard td.marked-free {
     background-position: center center
 }
 
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+}
+
 table#bingoCard td.marked-free div {
     font-size: 3em;
     line-height: 1em
