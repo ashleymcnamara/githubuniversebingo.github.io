@@ -1,262 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>GitHub Universe Bingo!</title>
-        <meta name="description" content="Play GitHub Universe Bingo!" />
 
-        <meta property="og:title" content="GitHub Universe Bingo!" />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="GitHub Universe Bingo!" />
-        <meta property="og:url" content="https://keynotebingo.github.io/" />
-        <meta property="og:description" content="It's time to play GitHub Universe Bingo!" />
-        <meta property="og:image" content="static/images/share.jpg" />
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GitHub Universe Bingo!</title>
+    <meta name="description" content="Play GitHub Universe Bingo!" />
 
-        <meta name="twitter:card" content="summary">
-        <meta name="twitter:url" content="https://keynotebingo.github.io/">
-        <meta name="twitter:title" content="GitHub Universe Bingo!">
-        <meta name="twitter:description" content="It's time to play GitHub Universe Bingo!">
-        <meta name="twitter:image" content="static/images/share.jpg">
+    <meta property="og:title" content="GitHub Universe Bingo!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="GitHub Universe Bingo!" />
+    <meta property="og:url" content="https://keynotebingo.github.io/" />
+    <meta property="og:description" content="It's time to play GitHub Universe Bingo!" />
+    <meta property="og:image" content="static/images/share.jpg" />
 
-        <link rel="stylesheet" href="static/styles/styles.css">
-        <link rel="shortcut icon" type="image/png" href="static/images/github-logo.png">
-        <link rel="apple-touch-icon-precomposed" href="static/images/github-logo.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="https://keynotebingo.github.io/">
+    <meta name="twitter:title" content="GitHub Universe Bingo!">
+    <meta name="twitter:description" content="It's time to play GitHub Universe Bingo!">
+    <meta name="twitter:image" content="static/images/share.jpg">
 
-        <script>
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-29707119-1']);
-            _gaq.push(['_trackPageview']);
-            (function() {
-                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-            })();
-        </script>
-    </head>
-    <body>
+    <link rel="stylesheet" href="static/styles/styles.css">
+    <link rel="shortcut icon" type="image/png" href="static/images/github-logo.png">
+    <link rel="apple-touch-icon-precomposed" href="static/images/github-logo.png">
+
+    <script>
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-29707119-1']);
+        _gaq.push(['_trackPageview']);
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</head>
+
+<body>
+    <div id="imageSection">
+        <img src="static/images/universe_header.webp" alt="universe footer" class="responsive-img">
+    </div>
+    <div class="container-fluid">
+        <header>
+            <h1 class="my-4 display-4">GitHub Universe Bingo!</h1>
+            <h2 class="mb-4 h5">California Streaming - November 2023</h2>
+        </header>
+
+        <div id="bingo">
+            <h1 class="my-4 display-1">BINGO!</h1>
+            <a class="btn btn-primary" href="?">Play again?</a>
+        </div>
+
+        <table id="bingoCard" class="table-responsive my-4 mx-auto">
+            <tbody id="playCard">
+            </tbody>
+        </table>
+        <table id="bingoCard" class="table-responsive my-4 mx-auto">
+            <tbody id="playCard">
+            </tbody>
+        </table>
+
+        <!-- New Section for Image -->
+
+        <footer>
+            <a class="btn btn-outline-success mr-2 new-bingo-card" href="?">New Bingo Card</a>
+            <a class="btn btn-outline-primary custom-primary ml-2" target="_blank"
+                href="http://twitter.com/intent/tweet?text=I+am+playing+GitHub+Universe+Keynote+Bingo!&url=https%3A%2F%2Fkeynotebingo.github.io%2F&hashtags=GitHubUniverse2023">Tweet
+                This</a>
+            <p class="mt-4 small">
+                Made with love by <a target="_blank" href="http://twitter.com/ashleymcnamara">@ashleymcnamara</a>
+            </p>
+        </footer>
         <div id="imageSection">
-            <img src="static/images/universe_header.webp" alt="universe footer" class="responsive-img">
+            <img src="static/images/bingo_footer.webp" alt="universe footer" class="responsive-img">
         </div>
-        <div class="container-fluid">
-            <header>
-                <h1 class="my-4 display-4">GitHub Universe Bingo!</h1>
-                <h2 class="mb-4 h5">California Streaming - November 2023</h2>
-            </header>
+    </div>
 
-            <div id="bingo">
-                <h1 class="my-4 display-1">BINGO!</h1>
-                <a class="btn btn-primary" href="?">Play again?</a>
-            </div>
-
-            <table id="bingoCard" class="table-responsive my-4 mx-auto">
-                <tbody id="playCard">
-                </tbody>
-            </table>
-            <table id="bingoCard" class="table-responsive my-4 mx-auto">
-                <tbody id="playCard">
-                </tbody>
-            </table>
-            
-            <!-- New Section for Image -->
-            
-            <footer>
-                <a class="btn btn-outline-success mr-2 new-bingo-card" href="?">New Bingo Card</a>
-                <a class="btn btn-outline-primary custom-primary ml-2" target="_blank" href="http://twitter.com/intent/tweet?text=I+am+playing+GitHub+Universe+Keynote+Bingo!&url=https%3A%2F%2Fkeynotebingo.github.io%2F&hashtags=GitHubUniverse2023">Tweet This</a>
-                <p class="mt-4 small">
-                    Made with love by <a target="_blank" href="http://twitter.com/ashleymcnamara">@ashleymcnamara</a> 
-                </p>
-            </footer>
-            <div id="imageSection">
-                <img src="static/images/bingo_footer.webp" alt="universe footer" class="responsive-img">
-            </div>
-        </div>
-
-        <script>
-            strings = [
-                "<strong>Mis-capitalization Faux Pas:</strong> Because it's GitHub, not Github; Copilot, not CoPilot; and DevEx, not Devex. Get it right, folks!",
-                "<strong>Superfluous Keynote Animation:</strong> For that moment when a simple slide transition just won't do, and the presenter opts for something more... extravagant.",
-                "<strong>Merge Conflict Joke:</strong> It's all fun and games until someone has to manually resolve conflicts.",
-                "<strong>Enterprise Announcement:</strong> Buckle up, everyone; this is where the rubber meets the enterprise-grade road!",
-                "<strong>Someone Says 'Repository':</strong> Take a sip of your coffee; this won't be the last time you hear it.",
-                "<strong>Speaker Says 'Um' More Than 5 Times:</strong> You can almost hear their high school speech teacher sighing in disappointment.",
-                "<strong>On-Stage Awkward Handshake:</strong> Because nothing says 'we're in this together' like fumbling a simple greeting under the spotlight.",
-                "<strong>Misuse of the Term AI:</strong> Because everything is AI now, didn't you know?",
-                "<strong>Someone Mentions 'DevOps':</strong> Bingo square or buzzword bingo? You decide.",
-                "<strong>Dad Joke from a Keynote Speaker:</strong> Mandatory humor? Check.",
-                "<strong>'This is the Future' of Code:</strong> Until next year's future, of course.",
-                "<strong>Demo Fail:</strong> Murphy's Law in action.",
-                "<strong>'Isn't That Exciting??':</strong> If you have to ask, it probably isn't.",
-                "<strong>Saying 'Developers' More Than 1x in a Row (Developers Developers Developers):</strong> Steve Ballmer's spirit lives on.",
-                "<strong>Demo Latency:</strong> In which time slows down for everyone involved.",
-                "<strong>'It's Not a Bug, It's a Feature':</strong> The unofficial motto of software development.",
-                "<strong>Octocat Sighting - 'It's MONA!'':</strong> Brightening up our screens and our spirits, the mascot we all adore.",
-                "<strong>Open Source Evangelism:</strong> Preaching to the choir, but we're here for it.",
-                "<strong>Git Pun / Joke:</strong> We commit to making you groan.",
-                "<strong>Feel-Good Moment:</strong> That one time we all remember we're human.",
-                "<strong>Multi-Cloud Strategy Talk:</strong> For those who refuse to put all their eggs in one basket—or cloud, as it were.",
-                "<strong>Meme Slide:</strong> The moment where 'keeping it professional' takes a backseat.",
-                "<strong>Someone Says 'Paradigm Shift':</strong> Shift your bingo squares in response.",
-                "<strong>AI Buzzword Bingo:</strong> 'Extensibility', 'Agents', 'Skills'... Does it make sense? Maybe. Does it sound impressive? Absolutely.",
-                "<strong>Mac Laptop on Stage:</strong> Because nothing says 'I'm a developer' like the glow of that Apple logo.",
-                "<strong>Windows Laptop on Stage:</strong> WSL or native? Either way, it's a shoutout to the other half of the dev world.",
-                "<strong>Cybersecurity Mention:</strong> Ah, the broccoli of tech talks. Good for you, but not always the star of the show.",
-                "<strong>Automation Talk:</strong> Where we learn that robots are our friends, not our overlords—yet.",
-                "<strong>API Mention:</strong> The unsung heroes of the internet get a moment in the limelight. Finally.",
-                "<strong>CLI Spotlight:</strong> Because nothing says 'I'm hardcore' like a black terminal screen with green text.",
-                "<strong>CI/CD Mention:</strong> Because if you're not continuously integrating, are you even developing?",
-                "<strong>GHAS Shoutout:</strong> When security gets its glam moment, courtesy of GitHub Advanced Security.", 
-                "<strong>Certification Talk:</strong> The moment we ponder if that shiny badge is a golden ticket or just another item for the résumé.",
-                "<strong>Custom Trained Model Mention:</strong> Because off-the-shelf AI is so last season; custom is the new black.",
-                "<strong>LLM Talk:</strong> When we dive deep and get close to the metal, but most of us are just trying to keep up.",
-                "<strong>DevEx Mention:</strong> When we remember it's not just about the code; it's about the humans writing it.",
-                "<strong>Collaboration Buzz:</strong> Because nothing says teamwork like overusing the word in a 30-minute talk.",
-                "<strong>GitHub Sponsors Plug:</strong> Where open source meets open wallets. Support your local dev today!",
-                "<strong>No Silos Mantra:</strong> We're all one team! says the presenter, hoping it'll magically tear down organizational walls.",
-                "<strong>Build Happy Developers Mention:</strong> The rally cry that has us all nodding, but wondering about the specifics.",
-                "<strong>Another Automation Point:</strong> If you automated taking a drink every time this word is mentioned, you'd be well-hydrated.",
-                "<strong>Sustainability Mention:</strong> Because who doesn't want to code for a better world, even if we're still figuring out how?",
-                "<strong>AI Dichotomy Mentioned:</strong> Ah, the moment we acknowledge AI's Jekyll and Hyde personality.",
-                "<strong>GitHub Enterprise Spotlight:</strong> When GHE steals the show, reminding us that enterprise isn't just a Star Trek ship.",
-                "<strong>Open Source Mention:</strong> Ah, the two words that make our collaborative hearts beat faster.",
-                "<strong>Accessibility Advocacy:</strong> The moment someone reminds us that the 'www' in web should stand for 'World Wide Welcome.'",
-                "<strong>Dogfooding Mention:</strong> Yes, we use our own products, and no, it's not as tasty as it sounds.",
-                "<strong>Monorepo Mention:</strong> When one big happy codebase is presented as a utopia, and we all wonder about merge conflicts.",
-                "<strong>Rapid-Fire Q&A:</strong> The presenter says, 'We have time for a few quick questions', but it turns into a thesis defense.",
-                "<strong>Unexpected Crossover:</strong> Star Wars or Marvel reference? Nerd worlds collide for a brief, shining moment.",
-                "<strong>Low-Code/No-Code Nod:</strong> When the buzz around simplifying development gets a shoutout.",
-                "<strong>Mental Health Minute:</strong> That wholesome moment when someone reminds us to take a break and breathe.",
-                "<strong>Coffee Mention:</strong> Acknowledging the real fuel behind every line of code.",
-                "<strong>Microservices Mention:</strong> Ah yes, the allure of small, focused services, as we recall the monoliths of yesteryears.",
-                "<strong>Serverless Sermon:</strong> The gospel according to AWS Lambda, Azure Functions, and Google Cloud Functions. Praise be to auto-scaling!",
-                "<strong>Legacy Code Lament:</strong> When the term 'spaghetti code' is used and we all share a knowing, pained look.",
-                "<strong>Global Reach, Local Keystrokes:</strong> When international collaboration is celebrated but you're still deciphering time zones.",
-                "<strong>DevEx Delight:</strong> When a new feature is announced solely to make a developer's life easier, and you can almost hear the collective sigh of relief.",
-                "<strong>GHE Security Shoutout:</strong> When someone brings up advanced security features and you realize they're talking about GitHub Enterprise only.",
-                "<strong>GHE Customization Celebration:</strong> Because nothing says Enterprise like being able to tweak every single setting.",
-                "<strong>Keynote Time Overrun:</strong> When the speaker says, 'I know I'm over time, but just one more thing...'",
-                "<strong>Unplanned Technical Glitch:</strong> When the slides freeze or the mic cuts out, and the speaker has to ad-lib.",
-                "<strong>The Buzzword Drop:</strong> When the speaker manages to squeeze in 'digital transformation', 'innovation', and 'synergy' in the same sentence.",
-                "<strong>Open Source Anecdote:</strong> When a speaker shares a personal story about how an open source project dramatically improved their life or workflow.",
-                "<strong>Stars Program Shoutout:</strong> When someone specifically mentions the GitHub Stars Program, reminding everyone there's an elite squad among us.",
-                "<strong>AI Hype Reality Check:</strong> When a speaker brings everyone back to Earth, clarifying that AI isn't magic but actually relies on data and algorithms.",
-                "<strong>AI Ethics Emphasis:</strong> A welcomed but often brief detour into the ethical considerations of AI implementation.",
-                "<strong>AI Buzzword Bingo Within Bingo:</strong> The meta moment when someone strings together 'neural networks', 'machine learning', and 'deep learning' in one sentence.",
-                "<strong>AI in Cybersecurity:</strong> When AI's role in enhancing security protocols gets its 15 seconds of fame.",
-                "<strong>Code Scanning Celebrated:</strong> A shoutout to GitHub's code scanning feature, making security an integral part of the development process.",
-                "<strong>Slide Advance Accident:</strong> When the speaker accidentally skips ahead three slides and then tries to backtrack seamlessly.",
-                "<strong>Audience Awkwardness:</strong> That uncomfortable pause after a speaker's joke falls flat, and the audience tries to muster a polite chuckle.",
-                "<strong>Stumbling on Names:</strong> That moment when the speaker mispronounces a name and quickly tries to recover.",
-                "<strong>Octocat Cameo Appearance:</strong> That delightful moment when an Octocat makes a surprise appearance in a presentation or slide.",
-                "<strong>As a Service Jumps the Queue:</strong> Because clearly, we need 'Laundry as a Service' (LaaS) to go with our SaaS, PaaS, and FaaS.",
-                "<strong>Size 10 Font Slide:</strong> Also known as Lean Forward and Squint: The Interactive Experience.",
-                "<strong>Dr. Who Quotes from the '70s:</strong> The Daleks may have failed to exterminate humanity, but they can't exterminate these vintage quotes.",
-                "<strong>Bow Tie in the Wild:</strong> For when a regular tie feels too mainstream, and you want to give off that Bill Nye, but make it tech vibe.",
-                "<strong>COMDEX Veteran:</strong> It's like finding a rare Pokémon, except it's a human with a story about floppy disks and Steve Jobs.",
-                "<strong>Wi-Fi Woes:</strong> Otherwise known as The Offline Apocalypse. Expect a surge in tethering.",
-                "<strong>Hacker from a '90s Movie Cosplay:</strong> You almost expect them to say, I'm in, while furiously typing nonsense.",
-                "<strong>Google Slides vs. Reality:</strong> When someone claims Google Slides is superior, but deep down we all know PowerPoint nostalgia wins.",
-                "<strong>PowerPoint Complaints:</strong> For those who need a break from complaining about their code editors.",
-                "<strong>Demo Machine Crash Applause Request:</strong> A real crash test in audience compassion. Applause for resiliency!",
-                "<strong>Artificial Enthusiasm Applause:</strong> When the applause is so fake, you can almost hear the Autotune.",
-                "<strong>Polite Applause:</strong> The Let's not make this any more awkward than it needs to be kind of clapping.",
-                "<strong>Zero Dance Moves During DJ Sets:</strong> It's not that coders can't dance, they're just waiting for a rhythm library to load.",
-                "<strong>Hug vs. Fist Bump Confusion:</strong> When physical greeting protocols mismatch, and awkwardness ensues. Error 404: Social Cue Not Found.",
-                "<strong>Awkward High-Five Attempt:</strong> The epitome of failed human-to-human API calls.",
-                "<strong>Hubber Running Late for Their Own Session:</strong> Just think of it as a GitHub merge conflict, but in real life.",
-                "<strong>Vibram Toe Shoes in the Wild:</strong> Also known as the 'Foot Gloves of Freedom', usually found roaming tech conferences in their natural habitat.",
-                "<strong>Patagonia Sweater Vest Sighting:</strong> 'Tech casual' is complete only when you spot this iconic fleece piece. Check it off if you see more sweater vests than laptops.",
-                "<strong>Sticker-Covered Laptop:</strong> When someone's laptop has so many stickers, you can't tell if it's a MacBook or a collage project.",
-                "<strong>One Brave Soul in a Suit Spotted:</strong> One attendee who missed the casual memo and came dressed for a Wall Street job interview.",
-                "<strong>Sudden Acronym Overload:</strong> When a speaker crams so many acronyms into a sentence, you need a decoder ring to understand it.",
-                "<strong>Slide Transition Overload:</strong> A presenter who discovers PowerPoint's slide transition effects and decides to use them all.",
-                "<strong>Too Many Cooks Spoil the Broth:</strong> A panel discussion where everyone talks over each other, turning the session into verbal chaos.",
-                "<strong>Nostalgia-Driven Tangent:</strong> When a presenter goes off-script to reminisce about the good old days of dial-up and floppy disks.",
-                "<strong>Captioning Lag Comedy:</strong> When the live captions can't keep up with the speaker, resulting in a humorous, unintentional rephrasing.",
-                "<strong>Water Bottle Ballet:</strong> When the speaker takes a sip of water but struggles to find where to put the bottle back, turning it into a balancing act on the podium.",
-                "<strong>Dramatic Reading of User Comments:</strong> That brave moment when a presenter reads aloud from social media or user forums, risking a blend of admiration and secondhand embarrassment.",
-                "<strong>Unintended Tab Sharing:</strong> That moment of panic when the speaker realizes they've been sharing their entire screen, revealing tabs like 'How to give a great presentation.'",
-                "<strong>The Awkward Dance:</strong> That moment when two presenters can't decide who should stand where, turning the stage into a dance floor for a few awkward seconds.",
-                "<strong>Action Overload:</strong> When the talk dives into GitHub Actions, and the speaker dramatically claims they've automated their entire life, not just their CI/CD pipeline.",
-                "<strong>GitHub Pages Puzzles:</strong> When the speaker tries to show off their GitHub Pages website live, only to find it's still building.",
-                "<strong>Pull Request Prayers:</strong> When a speaker submits a pull request live and openly prays for no merge conflicts.",
-                "<strong>Markdown Madness:</strong> That moment when the presenter shares their life-changing README file, only to realize the Markdown formatting is off.",
-                "<strong>Stars vs. Utility Debate:</strong> When the speaker opens a repo with thousands of stars but sheepishly admits they have 'no idea what it's for.'",
-                "<strong>Dependabot Diva:</strong> When Dependabot updates show up during a live demo, and the speaker treats it like a VIP appearance.",
-                "<strong>It Worked on My Machine Admission:</strong> When the presenter encounters an issue and blames the classic 'It worked on my machine' as the crowd chuckles.",
-                "<strong>Gist Gaffes:</strong> When a speaker tries to paste a code snippet from a Gist but accidentally reveals their collection of recipes or meme GIFs.",
-                "<strong>Repository Roulette:</strong> When the speaker can't remember which branch they need and goes on a clicking spree through their GitHub repository.",
-                "<strong>Community Confessions:</strong> When the presenter admits they still haven't figured out how to efficiently manage GitHub Discussions, bonding with half the room instantly.",
-                "<strong>Code Scanning Scares:</strong> The intense build-up as the speaker initiates a security scan of a repository, only to find... it's all good. Anti-climax achieved.",
-                "<strong>Issues with GitHub Issues:</strong> When a speaker tries to showcase their project's well-managed Issues but finds an open issue that's just a trolling comment.",
-                "<strong>GitHub CLI Faux Pas:</strong> When the speaker messes up a GitHub CLI command live, then laughs it off by saying they still miss the GUI.",
+    <script>
+        strings = [
+            "<strong>Mis-capitalization Faux Pas:</strong> Because it's GitHub, not Github; Copilot, not CoPilot; and DevEx, not Devex. Get it right, folks!",
+            "<strong>Superfluous Keynote Animation:</strong> For that moment when a simple slide transition just won't do, and the presenter opts for something more... extravagant.",
+            "<strong>Merge Conflict Joke:</strong> It's all fun and games until someone has to manually resolve conflicts.",
+            "<strong>Enterprise Announcement:</strong> Buckle up, everyone; this is where the rubber meets the enterprise-grade road!",
+            "<strong>Someone Says 'Repository':</strong> Take a sip of your coffee; this won't be the last time you hear it.",
+            "<strong>Speaker Says 'Um' More Than 5 Times:</strong> You can almost hear their high school speech teacher sighing in disappointment.",
+            "<strong>On-Stage Awkward Handshake:</strong> Because nothing says 'we're in this together' like fumbling a simple greeting under the spotlight.",
+            "<strong>Misuse of the Term AI:</strong> Because everything is AI now, didn't you know?",
+            "<strong>Someone Mentions 'DevOps':</strong> Bingo square or buzzword bingo? You decide.",
+            "<strong>Dad Joke from a Keynote Speaker:</strong> Mandatory humor? Check.",
+            "<strong>'This is the Future' of Code:</strong> Until next year's future, of course.",
+            "<strong>Demo Fail:</strong> Murphy's Law in action.",
+            "<strong>'Isn't That Exciting??':</strong> If you have to ask, it probably isn't.",
+            "<strong>Saying 'Developers' More Than 1x in a Row (Developers Developers Developers):</strong> Steve Ballmer's spirit lives on.",
+            "<strong>Demo Latency:</strong> In which time slows down for everyone involved.",
+            "<strong>'It's Not a Bug, It's a Feature':</strong> The unofficial motto of software development.",
+            "<strong>Octocat Sighting - 'It's MONA!'':</strong> Brightening up our screens and our spirits, the mascot we all adore.",
+            "<strong>Open Source Evangelism:</strong> Preaching to the choir, but we're here for it.",
+            "<strong>Git Pun / Joke:</strong> We commit to making you groan.",
+            "<strong>Feel-Good Moment:</strong> That one time we all remember we're human.",
+            "<strong>Multi-Cloud Strategy Talk:</strong> For those who refuse to put all their eggs in one basket—or cloud, as it were.",
+            "<strong>Meme Slide:</strong> The moment where 'keeping it professional' takes a backseat.",
+            "<strong>Someone Says 'Paradigm Shift':</strong> Shift your bingo squares in response.",
+            "<strong>AI Buzzword Bingo:</strong> 'Extensibility', 'Agents', 'Skills'... Does it make sense? Maybe. Does it sound impressive? Absolutely.",
+            "<strong>Mac Laptop on Stage:</strong> Because nothing says 'I'm a developer' like the glow of that Apple logo.",
+            "<strong>Windows Laptop on Stage:</strong> WSL or native? Either way, it's a shoutout to the other half of the dev world.",
+            "<strong>Cybersecurity Mention:</strong> Ah, the broccoli of tech talks. Good for you, but not always the star of the show.",
+            "<strong>Automation Talk:</strong> Where we learn that robots are our friends, not our overlords—yet.",
+            "<strong>API Mention:</strong> The unsung heroes of the internet get a moment in the limelight. Finally.",
+            "<strong>CLI Spotlight:</strong> Because nothing says 'I'm hardcore' like a black terminal screen with green text.",
+            "<strong>CI/CD Mention:</strong> Because if you're not continuously integrating, are you even developing?",
+            "<strong>GHAS Shoutout:</strong> When security gets its glam moment, courtesy of GitHub Advanced Security.",
+            "<strong>Certification Talk:</strong> The moment we ponder if that shiny badge is a golden ticket or just another item for the résumé.",
+            "<strong>Custom Trained Model Mention:</strong> Because off-the-shelf AI is so last season; custom is the new black.",
+            "<strong>LLM Talk:</strong> When we dive deep and get close to the metal, but most of us are just trying to keep up.",
+            "<strong>DevEx Mention:</strong> When we remember it's not just about the code; it's about the humans writing it.",
+            "<strong>Collaboration Buzz:</strong> Because nothing says teamwork like overusing the word in a 30-minute talk.",
+            "<strong>GitHub Sponsors Plug:</strong> Where open source meets open wallets. Support your local dev today!",
+            "<strong>No Silos Mantra:</strong> We're all one team! says the presenter, hoping it'll magically tear down organizational walls.",
+            "<strong>Build Happy Developers Mention:</strong> The rally cry that has us all nodding, but wondering about the specifics.",
+            "<strong>Another Automation Point:</strong> If you automated taking a drink every time this word is mentioned, you'd be well-hydrated.",
+            "<strong>Sustainability Mention:</strong> Because who doesn't want to code for a better world, even if we're still figuring out how?",
+            "<strong>AI Dichotomy Mentioned:</strong> Ah, the moment we acknowledge AI's Jekyll and Hyde personality.",
+            "<strong>GitHub Enterprise Spotlight:</strong> When GHE steals the show, reminding us that enterprise isn't just a Star Trek ship.",
+            "<strong>Open Source Mention:</strong> Ah, the two words that make our collaborative hearts beat faster.",
+            "<strong>Accessibility Advocacy:</strong> The moment someone reminds us that the 'www' in web should stand for 'World Wide Welcome.'",
+            "<strong>Dogfooding Mention:</strong> Yes, we use our own products, and no, it's not as tasty as it sounds.",
+            "<strong>Monorepo Mention:</strong> When one big happy codebase is presented as a utopia, and we all wonder about merge conflicts.",
+            "<strong>Rapid-Fire Q&A:</strong> The presenter says, 'We have time for a few quick questions', but it turns into a thesis defense.",
+            "<strong>Unexpected Crossover:</strong> Star Wars or Marvel reference? Nerd worlds collide for a brief, shining moment.",
+            "<strong>Low-Code/No-Code Nod:</strong> When the buzz around simplifying development gets a shoutout.",
+            "<strong>Mental Health Minute:</strong> That wholesome moment when someone reminds us to take a break and breathe.",
+            "<strong>Coffee Mention:</strong> Acknowledging the real fuel behind every line of code.",
+            "<strong>Microservices Mention:</strong> Ah yes, the allure of small, focused services, as we recall the monoliths of yesteryears.",
+            "<strong>Serverless Sermon:</strong> The gospel according to AWS Lambda, Azure Functions, and Google Cloud Functions. Praise be to auto-scaling!",
+            "<strong>Legacy Code Lament:</strong> When the term 'spaghetti code' is used and we all share a knowing, pained look.",
+            "<strong>Global Reach, Local Keystrokes:</strong> When international collaboration is celebrated but you're still deciphering time zones.",
+            "<strong>DevEx Delight:</strong> When a new feature is announced solely to make a developer's life easier, and you can almost hear the collective sigh of relief.",
+            "<strong>GHE Security Shoutout:</strong> When someone brings up advanced security features and you realize they're talking about GitHub Enterprise only.",
+            "<strong>GHE Customization Celebration:</strong> Because nothing says Enterprise like being able to tweak every single setting.",
+            "<strong>Keynote Time Overrun:</strong> When the speaker says, 'I know I'm over time, but just one more thing...'",
+            "<strong>Unplanned Technical Glitch:</strong> When the slides freeze or the mic cuts out, and the speaker has to ad-lib.",
+            "<strong>The Buzzword Drop:</strong> When the speaker manages to squeeze in 'digital transformation', 'innovation', and 'synergy' in the same sentence.",
+            "<strong>Open Source Anecdote:</strong> When a speaker shares a personal story about how an open source project dramatically improved their life or workflow.",
+            "<strong>Stars Program Shoutout:</strong> When someone specifically mentions the GitHub Stars Program, reminding everyone there's an elite squad among us.",
+            "<strong>AI Hype Reality Check:</strong> When a speaker brings everyone back to Earth, clarifying that AI isn't magic but actually relies on data and algorithms.",
+            "<strong>AI Ethics Emphasis:</strong> A welcomed but often brief detour into the ethical considerations of AI implementation.",
+            "<strong>AI Buzzword Bingo Within Bingo:</strong> The meta moment when someone strings together 'neural networks', 'machine learning', and 'deep learning' in one sentence.",
+            "<strong>AI in Cybersecurity:</strong> When AI's role in enhancing security protocols gets its 15 seconds of fame.",
+            "<strong>Code Scanning Celebrated:</strong> A shoutout to GitHub's code scanning feature, making security an integral part of the development process.",
+            "<strong>Slide Advance Accident:</strong> When the speaker accidentally skips ahead three slides and then tries to backtrack seamlessly.",
+            "<strong>Audience Awkwardness:</strong> That uncomfortable pause after a speaker's joke falls flat, and the audience tries to muster a polite chuckle.",
+            "<strong>Stumbling on Names:</strong> That moment when the speaker mispronounces a name and quickly tries to recover.",
+            "<strong>Octocat Cameo Appearance:</strong> That delightful moment when an Octocat makes a surprise appearance in a presentation or slide.",
+            "<strong>As a Service Jumps the Queue:</strong> Because clearly, we need 'Laundry as a Service' (LaaS) to go with our SaaS, PaaS, and FaaS.",
+            "<strong>Size 10 Font Slide:</strong> Also known as Lean Forward and Squint: The Interactive Experience.",
+            "<strong>Dr. Who Quotes from the '70s:</strong> The Daleks may have failed to exterminate humanity, but they can't exterminate these vintage quotes.",
+            "<strong>Bow Tie in the Wild:</strong> For when a regular tie feels too mainstream, and you want to give off that Bill Nye, but make it tech vibe.",
+            "<strong>COMDEX Veteran:</strong> It's like finding a rare Pokémon, except it's a human with a story about floppy disks and Steve Jobs.",
+            "<strong>Wi-Fi Woes:</strong> Otherwise known as The Offline Apocalypse. Expect a surge in tethering.",
+            "<strong>Hacker from a '90s Movie Cosplay:</strong> You almost expect them to say, I'm in, while furiously typing nonsense.",
+            "<strong>Google Slides vs. Reality:</strong> When someone claims Google Slides is superior, but deep down we all know PowerPoint nostalgia wins.",
+            "<strong>PowerPoint Complaints:</strong> For those who need a break from complaining about their code editors.",
+            "<strong>Demo Machine Crash Applause Request:</strong> A real crash test in audience compassion. Applause for resiliency!",
+            "<strong>Artificial Enthusiasm Applause:</strong> When the applause is so fake, you can almost hear the Autotune.",
+            "<strong>Polite Applause:</strong> The Let's not make this any more awkward than it needs to be kind of clapping.",
+            "<strong>Zero Dance Moves During DJ Sets:</strong> It's not that coders can't dance, they're just waiting for a rhythm library to load.",
+            "<strong>Hug vs. Fist Bump Confusion:</strong> When physical greeting protocols mismatch, and awkwardness ensues. Error 404: Social Cue Not Found.",
+            "<strong>Awkward High-Five Attempt:</strong> The epitome of failed human-to-human API calls.",
+            "<strong>Hubber Running Late for Their Own Session:</strong> Just think of it as a GitHub merge conflict, but in real life.",
+            "<strong>Vibram Toe Shoes in the Wild:</strong> Also known as the 'Foot Gloves of Freedom', usually found roaming tech conferences in their natural habitat.",
+            "<strong>Patagonia Sweater Vest Sighting:</strong> 'Tech casual' is complete only when you spot this iconic fleece piece. Check it off if you see more sweater vests than laptops.",
+            "<strong>Sticker-Covered Laptop:</strong> When someone's laptop has so many stickers, you can't tell if it's a MacBook or a collage project.",
+            "<strong>One Brave Soul in a Suit Spotted:</strong> One attendee who missed the casual memo and came dressed for a Wall Street job interview.",
+            "<strong>Sudden Acronym Overload:</strong> When a speaker crams so many acronyms into a sentence, you need a decoder ring to understand it.",
+            "<strong>Slide Transition Overload:</strong> A presenter who discovers PowerPoint's slide transition effects and decides to use them all.",
+            "<strong>Too Many Cooks Spoil the Broth:</strong> A panel discussion where everyone talks over each other, turning the session into verbal chaos.",
+            "<strong>Nostalgia-Driven Tangent:</strong> When a presenter goes off-script to reminisce about the good old days of dial-up and floppy disks.",
+            "<strong>Captioning Lag Comedy:</strong> When the live captions can't keep up with the speaker, resulting in a humorous, unintentional rephrasing.",
+            "<strong>Water Bottle Ballet:</strong> When the speaker takes a sip of water but struggles to find where to put the bottle back, turning it into a balancing act on the podium.",
+            "<strong>Dramatic Reading of User Comments:</strong> That brave moment when a presenter reads aloud from social media or user forums, risking a blend of admiration and secondhand embarrassment.",
+            "<strong>Unintended Tab Sharing:</strong> That moment of panic when the speaker realizes they've been sharing their entire screen, revealing tabs like 'How to give a great presentation.'",
+            "<strong>The Awkward Dance:</strong> That moment when two presenters can't decide who should stand where, turning the stage into a dance floor for a few awkward seconds.",
+            "<strong>Action Overload:</strong> When the talk dives into GitHub Actions, and the speaker dramatically claims they've automated their entire life, not just their CI/CD pipeline.",
+            "<strong>GitHub Pages Puzzles:</strong> When the speaker tries to show off their GitHub Pages website live, only to find it's still building.",
+            "<strong>Pull Request Prayers:</strong> When a speaker submits a pull request live and openly prays for no merge conflicts.",
+            "<strong>Markdown Madness:</strong> That moment when the presenter shares their life-changing README file, only to realize the Markdown formatting is off.",
+            "<strong>Stars vs. Utility Debate:</strong> When the speaker opens a repo with thousands of stars but sheepishly admits they have 'no idea what it's for.'",
+            "<strong>Dependabot Diva:</strong> When Dependabot updates show up during a live demo, and the speaker treats it like a VIP appearance.",
+            "<strong>It Worked on My Machine Admission:</strong> When the presenter encounters an issue and blames the classic 'It worked on my machine' as the crowd chuckles.",
+            "<strong>Gist Gaffes:</strong> When a speaker tries to paste a code snippet from a Gist but accidentally reveals their collection of recipes or meme GIFs.",
+            "<strong>Repository Roulette:</strong> When the speaker can't remember which branch they need and goes on a clicking spree through their GitHub repository.",
+            "<strong>Community Confessions:</strong> When the presenter admits they still haven't figured out how to efficiently manage GitHub Discussions, bonding with half the room instantly.",
+            "<strong>Code Scanning Scares:</strong> The intense build-up as the speaker initiates a security scan of a repository, only to find... it's all good. Anti-climax achieved.",
+            "<strong>Issues with GitHub Issues:</strong> When a speaker tries to showcase their project's well-managed Issues but finds an open issue that's just a trolling comment.",
+            "<strong>GitHub CLI Faux Pas:</strong> When the speaker messes up a GitHub CLI command live, then laughs it off by saying they still miss the GUI.",
 
 
-                ]
+        ]
 
-            function shuffle(array) {
-                var currentIndex = array.length;
-                var temporaryValue;
-                var randomIndex;
-                while (0 !== currentIndex) {
-                    randomIndex = Math.floor(Math.random() * currentIndex);
-                    currentIndex -= 1;
-                    temporaryValue = array[currentIndex];
-                    array[currentIndex] = array[randomIndex];
-                    array[randomIndex] = temporaryValue;
-                }
-                return array;
+        function shuffle(array) {
+            var currentIndex = array.length;
+            var temporaryValue;
+            var randomIndex;
+            while (0 !== currentIndex) {
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex -= 1;
+                temporaryValue = array[currentIndex];
+                array[currentIndex] = array[randomIndex];
+                array[randomIndex] = temporaryValue;
             }
+            return array;
+        }
 
-            var shuffled_strings = shuffle(strings);
-            el_playcard = document.getElementById('playCard');
-            for(var row = 0; row < 5; row += 1) {
-                el_row = el_playcard.insertRow(-1);
+        var shuffled_strings = shuffle(strings);
+        el_playcard = document.getElementById('playCard');
+        for (var row = 0; row < 5; row += 1) {
+            el_row = el_playcard.insertRow(-1);
 
-                for(var col = 0; col < 5; col += 1) {
-                    el_cell = el_row.insertCell(0);
-                    if(row == 2 && col == 2) {
-                        el_cell.innerHTML = 'Free<br /><br /><br /><br />Space';
-                        el_cell.classList.add('marked');
-                        el_cell.classList.add('marked-free');
-                    }
-                    else {
-                        el_cell.innerHTML = shuffled_strings.pop();
-                        el_cell.addEventListener('click', mark_cell, false);
-                    }
-                }
-            }
-
-            var bingo_counter = 0;
-
-            var marked_sound = new Audio('static/sounds/pop.wav');
-            marked_sound.load();
-            var bingo_sound = new Audio('static/sounds/win.wav');
-            bingo_sound.load();
-
-            function mark_cell(cell) {
-                cell.srcElement.removeEventListener('click', mark_cell);
-                cell.srcElement.classList.add('marked');
-                bingo_counter++;
-
-                if(bingo_counter === 24) {
-                    document.querySelectorAll('td').forEach(function (e) {
-                        e.classList.add('rotate-out');
-                    });
-                    bingo_sound.play();
-                    window.setTimeout(function() {
-                        play_again = document.getElementById('bingo');
-                        play_again.classList.add('bounce-in');
-                        play_again.style.display = 'block';
-
-                        bingoCard = document.getElementById('bingoCard');
-                        bingoCard.style.visibility = 'hidden';
-                    }, 400);
+            for (var col = 0; col < 5; col += 1) {
+                el_cell = el_row.insertCell(0);
+                if (row == 2 && col == 2) {
+                    el_cell.innerHTML = 'Free<br /><br /><br /><br />Space';
+                    el_cell.classList.add('marked');
+                    el_cell.classList.add('marked-free');
                 }
                 else {
-                    marked_sound.play();
+                    el_cell.innerHTML = shuffled_strings.pop();
+                    el_cell.addEventListener('click', mark_cell, false);
                 }
             }
-        </script>
-    </body>
+        }
+
+        var bingo_counter = 0;
+
+        var marked_sound = new Audio('static/sounds/pop.wav');
+        marked_sound.load();
+        var bingo_sound = new Audio('static/sounds/win.wav');
+        bingo_sound.load();
+
+        function mark_cell(cell) {
+            cell.srcElement.removeEventListener('click', mark_cell);
+            cell.srcElement.classList.add('marked');
+            bingo_counter++;
+
+            if (bingo_counter === 24) {
+                document.querySelectorAll('td').forEach(function (e) {
+                    e.classList.add('rotate-out');
+                });
+                bingo_sound.play();
+                window.setTimeout(function () {
+                    play_again = document.getElementById('bingo');
+                    play_again.classList.add('bounce-in');
+                    play_again.style.display = 'block';
+
+                    bingoCard = document.getElementById('bingoCard');
+                    bingoCard.style.visibility = 'hidden';
+                }, 400);
+            }
+            else {
+                marked_sound.play();
+            }
+        }
+    </script>
+</body>
+
 </html>
