@@ -17,22 +17,30 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <nav class="navbar navbar-expand-lg navbar-dark bg-black">
         <!-- Navbar Toggler -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar"
+            aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        
+
         <!-- Navbar Menu -->
         <div class="collapse navbar-collapse" id="mainNavbar">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Open Menu">
+                    <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false" aria-label="Open Menu">
                         Menu
                     </a>
                     <div class="dropdown-menu" aria-labelledby="menuDropdown">
                         <a class="dropdown-item" href="https://universebingo.dev" aria-label="Home">Home</a>
-                        <a class="dropdown-item" href="https://reg.githubuniverse.com/flow/github/universe23/sessioncatalog/page/sessioncatalog" aria-label="Sessions">Sessions</a>
-                        <a class="dropdown-item" href="https://reg.githubuniverse.com/flow/github/universe23/sessioncatalog/page/speakercatalog" aria-label="Speakers">Speakers</a>
-                        <a class="dropdown-item" href="https://reg.githubuniverse.com/flow/github/universe23/sessioncatalog/login" aria-label="My Agenda">My Agenda</a>
+                        <a class="dropdown-item"
+                            href="https://reg.githubuniverse.com/flow/github/universe23/sessioncatalog/page/sessioncatalog"
+                            aria-label="Sessions">Sessions</a>
+                        <a class="dropdown-item"
+                            href="https://reg.githubuniverse.com/flow/github/universe23/sessioncatalog/page/speakercatalog"
+                            aria-label="Speakers">Speakers</a>
+                        <a class="dropdown-item"
+                            href="https://reg.githubuniverse.com/flow/github/universe23/sessioncatalog/login"
+                            aria-label="My Agenda">My Agenda</a>
                     </div>
                 </li>
             </ul>
@@ -69,7 +77,7 @@
 </head>
 
 <body>
-    
+
     <!-- Image Section at the top -->
     <div id="imageSection">
         <img src="static/images/universe_header.webp" alt="universe footer" class="responsive-img">
@@ -96,222 +104,227 @@
             </div>
         </div>
         <!-- Table Section for Bingo Card -->
-<div class="table-responsive">
-    <table id="bingoCard" class="my-4 mx-auto" aria-label="Bingo Card">
-        <tbody id="playCard"></tbody>
-    </table>
-</div>
+        <div class="table-responsive">
+            <table id="bingoCard" class="my-4 mx-auto" aria-label="Bingo Card">
+                <tbody id="playCard"></tbody>
+            </table>
+        </div>
 
-<!-- Footer Section -->
-<footer class="footer">
-    <!-- Action Buttons -->
-    <div class="footer-action-buttons">
-        <a class="btn btn-outline-success mr-2 new-bingo-card" href="?" aria-label="Generate a new bingo card">New Bingo Card</a>
-        <a class="btn btn-outline-primary custom-primary ml-2" target="_blank" aria-label="Tweet about your Bingo game"
-            href="https://twitter.com/intent/tweet?text=I+am+playing+GitHub+Universe+Keynote+Bingo!&url=https%3A%2F%2Funiversebingo.dev%2F&hashtags=UniverseBingo">
-            Tweet This
-        </a>
-    </div>
-    
-    <!-- Footer Credits -->
-    <p class="mt-4 small">
-        Made with love by 
-        <a target="_blank" href="https://twitter.com/ashleymcnamara" style="color: #4ac26b;" aria-label="Ashley's Twitter">@ashleymcnamara</a> 
-        and inspired by 
-        <a target="_blank" href="https://github.com/keynotebingo/keynotebingo.github.io" style="color: #4ac26b;" aria-label="Keynote Bingo on GitHub">keynotebingo.github.io</a>
-    </p>
-</footer>
+        <!-- Footer Section -->
+        <footer class="footer">
+            <!-- Action Buttons -->
+            <div class="footer-action-buttons">
+                <a class="btn btn-outline-success mr-2 new-bingo-card" href="?"
+                    aria-label="Generate a new bingo card">New Bingo Card</a>
+                <a class="btn btn-outline-primary custom-primary ml-2" target="_blank"
+                    aria-label="Tweet about your Bingo game"
+                    href="https://twitter.com/intent/tweet?text=I+am+playing+GitHub+Universe+Keynote+Bingo!&url=https%3A%2F%2Funiversebingo.dev%2F&hashtags=UniverseBingo">
+                    Tweet This
+                </a>
+            </div>
 
-<!-- Image Section -->
-<div id="imageSection">
-    <img src="static/images/bingo_footer.webp" alt="Universe footer" class="responsive-img" aria-label="Universe footer image">
-</div>
+            <!-- Footer Credits -->
+            <p class="mt-4 small">
+                Made with love by
+                <a target="_blank" href="https://twitter.com/ashleymcnamara" style="color: #4ac26b;"
+                    aria-label="Ashley's Twitter">@ashleymcnamara</a>
+                and inspired by
+                <a target="_blank" href="https://github.com/keynotebingo/keynotebingo.github.io" style="color: #4ac26b;"
+                    aria-label="Keynote Bingo on GitHub">keynotebingo.github.io</a>
+            </p>
+        </footer>
 
-    <script>
-        strings = [
-            "<strong>GHAS Glamour Moment:</strong> Because GitHub Advanced Security is the unsung hero we should all applaud.",
-            "<strong>Enlightening Certification Talk:</strong> Pondering whether that certification could be your key to new opportunities.",
-            "<strong>Custom Trained Model Chic:</strong> Tailor-made AI solutions that set new fashion standards in tech.",
-            "<strong>Deep Dive with LLM:</strong> Journeying to the core of technology and feeling like tech explorers.",
-            "<strong>Human-Centric DevEx:</strong> A gentle reminder that behind every line of code is a human heart.",
-            "<strong>Collaboration Symphony:</strong> Where teamwork and shared vision create beautiful tech music.",
-            "<strong>Generosity via GitHub Sponsors:</strong> Your chance to be a patron of the tech arts.",
-            "<strong>No More Silos:</strong> A hopeful call for unity that has the potential to reshape organizations.",
-            "<strong>Happy Developers, Happy Code:</strong> The mantra that sets the tone for a holistic work environment.",
-            "<strong>Hydration Automation:</strong> If we automated water breaks like code deployments, we'd be the healthiest community ever.",
-            "<strong>Sustainability Aspirations:</strong> Code today for a better tomorrow; it's a mission statement.",
-            "<strong>The AI Paradox:</strong> AI's dual nature makes us think deeply about our own.",
-            "<strong>Enterprise or Starship?</strong> GitHub Enterprise reminds us it's a force to be reckoned with.",
-            "<strong>Open Source Heartbeat:</strong> Those two magical words that fuel our collaborative spirit.",
-            "<strong>Accessibility for All:</strong> The rallying cry for a World Wide Welcome.",
-            "<strong>True to Dogfooding:</strong> We trust our products so much, we use them ourselves.",
-            "<strong>Monorepo Musings:</strong> Where one codebase holds the promise of unity.",
-            "<strong>Rapid Q&A:</strong> The adrenaline rush of a sudden, academic deep dive.",
-            "<strong>Pop Culture Collision:</strong> Where tech meets Star Wars or Marvel, and we're all delighted.",
-            "<strong>No-Code Simplicity:</strong> A nod to the technology that's democratizing development.",
-            "<strong>Breathe In, Code Out:</strong> A crucial reminder that mental health matters.",
-            "<strong>The Fuel Called Coffee:</strong> Paying homage to the unsung hero behind successful code.",
-            "<strong>Microservices Magic:</strong> Small is beautiful, and functional.",
-            "<strong>Serverless Serenity:</strong> A seamless world powered by serverless architecture.",
-            "<strong>Legacy Code Wisdom:</strong> Learning valuable lessons from the code of yesteryears.",
-            "<strong>Time Zones, No Barriers:</strong> We may be miles apart, but we're keystrokes away.",
-            "<strong>DevEx Relief:</strong> That new feature you didn't know you needed, but now can't live without.",
-            "<strong>Enterprise-Only Security:</strong> When GitHub Enterprise becomes the VIP room of tech security.",
-            "<strong>Customization Fiesta:</strong> A celebration of the endless customization Enterprise offers.",
-            "<strong>One More Minute:</strong> Because the best is saved for last.",
-            "<strong>Unexpected Improv:</strong> When a glitch turns into an opportunity for spontaneity.",
-            "<strong>Buzzword Poetry:</strong> Stringing together industry jargon into something almost profound.",
-            "<strong>Open Source Transformations:</strong> Life-changing stories inspired by open-source projects.",
-            "<strong>GitHub Stars Parade:</strong> Celebrating the vanguards of our tech community.",
-            "<strong>AI Grounding:</strong> A reality check that strips away the AI mystique.",
-            "<strong>Ethical AI Pause:</strong> Brief but impactful reflections on AI ethics.",
-            "<strong>AI Bingo-ception:</strong> When buzzwords create a buzzword inception moment.",
-            "<strong>AI's Security Spotlight:</strong> AI steps up as the unsung hero of cybersecurity.",
-            "<strong>Code Scanning Cheers:</strong> Because secure code is happy code.",
-            "<strong>Slide Advance Ballet:</strong> When a hiccup turns into a graceful dance of slides.",
-            "<strong>Unified Laughter:</strong> The awkward moment that makes us all human.",
-            "<strong>Name Recovery:</strong> A small slip-up that turns into a lesson in grace.",
-            "<strong>Octocat Surprise:</strong> The mascot that never fails to bring a smile.",
-            "<strong>Service Overload:</strong> As-a-Service offerings take a comedic turn.",
-            "<strong>Font Size Challenge:</strong> The interactive experience that tests your vision.",
-            "<strong>Timeless Dr. Who Wisdom:</strong> Where past and future converge into quotable moments.",
-            "<strong>Bow Tie Quirkiness:</strong> A nod to those who dare to be different in a sea of sameness.",
-            "<strong>COMDEX Veteran:</strong> Like a tech world's Indiana Jones, treasure troves of floppy disks and vintage Steve Jobs stories in tow.",
-            "<strong>Wi-Fi Woes:</strong> A momentary offline meditation session before the sweet joy of reconnection.",
-            "<strong>Hacker from a '90s Movie Cosplay:</strong> Living proof that nostalgia and tech can beautifully coexist.",
-            "<strong>Google Slides vs. Reality:</strong> The friendly rivalry between Google Slides enthusiasts and PowerPoint purists brings spice to the conference.",
-            "<strong>PowerPoint Complaints:</strong> A palate cleanser in the chatter, refreshing us from coding debates.",
-            "<strong>Demo Machine Crash Applause Request:</strong> A heartwarming display of collective empathy and encouragement.",
-            "<strong>Artificial Enthusiasm Applause:</strong> A poetic reminder that sometimes we're all just trying our best.",
-            "<strong>Polite Applause:</strong> A small act of kindness, no strings attached.",
-            "<strong>Zero Dance Moves During DJ Sets:</strong> Not anti-dance, just pro-contemplation.",
-            "<strong>Hug vs. Fist Bump Confusion:</strong> A charming dance of modern social choreography.",
-            "<strong>Awkward High-Five Attempt:</strong> A wholesome demonstration of the complexity of human interactions.",
-            "<strong>Hubber Running Late for Their Own Session:</strong> A real-time case study in graceful conflict resolution.",
-            "<strong>Vibram Toe Shoes in the Wild:</strong> The epitome of personal freedom and style.",
-            "<strong>Patagonia Sweater Vest Sighting:</strong> A fleece-wrapped emblem of tech's casual elegance.",
-            "<strong>Sticker-Covered Laptop:</strong> A vibrant tapestry telling tales of tech's diversity and openness.",
-            "<strong>One Brave Soul in a Suit Spotted:</strong> The bold adventurer in the realm of casualness, reminding us of the world beyond.",
-            "<strong>Sudden Acronym Overload:</strong> A rousing game of buzzword bingo for the audience.",
-            "<strong>Slide Transition Overload:</strong> A kaleidoscope of effects, reminding us of PowerPoint's earnest beginnings.",
-            "<strong>Too Many Cooks Spoil the Broth:</strong> An exercise in chaos theory, from which clarity may one day emerge.",
-            "<strong>Nostalgia-Driven Tangent:</strong> A delightful detour down memory lane.",
-            "<strong>Captioning Lag Comedy:</strong> Unintentional humor that bridges gaps between speaker and audience.",
-            "<strong>Water Bottle Ballet:</strong> A glimpse of real-world physics amidst digital discourse.",
-            "<strong>Dramatic Reading of User Comments:</strong> A brave space for collective empathy, giving voice to the silent.",
-            "<strong>Unintended Tab Sharing:</strong> A humanizing peek behind the curtain of preparation.",
-            "<strong>The Awkward Dance:</strong> An endearing interplay that mirrors the ebb and flow of team dynamics.",
-            "<strong>Action Overload:</strong> The presenter's vision of a future where automation elevates us all.",
-            "<strong>GitHub Pages Puzzles:</strong> A live exercise in patience and debugging, featuring you as the star.",
-            "<strong>Pull Request Prayers:</strong> A communal moment of hope, echoing through the git universe.",
-            "<strong>Markdown Madness:</strong> When humble README files take the spotlight, if only for a formatting second.",
-            "<strong>Stars vs. Utility Debate:</strong> A fascinating glimpse into the enigma of popularity vs. practicality in the OSS world.",
-            "<strong>Dependabot Diva:</strong> The unsung hero of our codebases, making a celebrity cameo.",
-            "<strong>It Worked on My Machine Admission:</strong> A collective nod to the quirks and unpredictabilities that keep us on our toes.",
-            "<strong>Gist Gems:</strong> A delightful showcase of a speaker's diverse interests beyond code.",
-            "<strong>Repository Revelations:</strong> An exciting journey through the branches of a codebase, unveiling opportunities at every turn.",
-            "<strong>Community Connections:</strong> Genuine moments that foster enduring bonds within the community.",
-            "<strong>Code Scanning Success:</strong> An empowering journey toward fortifying our digital sanctuaries.",
-            "<strong>GitHub Issues Insights:</strong> A transformative look into optimizing online community management.",
-            "<strong>GitHub CLI Mastery:</strong> An inspiring acknowledgement of the continuous learning that elevates us all."
-        ]
-        // Shuffle function to randomize an array
-        function shuffle(array) {
-            var currentIndex = array.length;
-            var temporaryValue;
-            var randomIndex;
-            // While loop to shuffle the array
-            while (0 !== currentIndex) {
-                randomIndex = Math.floor(Math.random() * currentIndex);
-                currentIndex -= 1;
-                // Swap array elements
-                temporaryValue = array[currentIndex];
-                array[currentIndex] = array[randomIndex];
-                array[randomIndex] = temporaryValue;
-            }
-            return array;
-        }
-        // Shuffle the 'strings' array and store it in 'shuffled_strings'
-        var shuffled_strings = shuffle(strings);
-        // Get the playCard element from the DOM
-        el_playcard = document.getElementById('playCard');
-        // Loop to create rows and columns
-        for (var row = 0; row < 5; row += 1) {
-            el_row = el_playcard.insertRow(-1);
+        <!-- Image Section -->
+        <div id="imageSection">
+            <img src="static/images/bingo_footer.webp" alt="Universe footer" class="responsive-img"
+                aria-label="Universe footer image">
+        </div>
 
-            for (var col = 0; col < 5; col += 1) {
-                el_cell = el_row.insertCell(0);
-                // Check for the "Free Space" at the center of the grid
-                if (row == 2 && col == 2) {
-                    // Populate cells with shuffled strings and add click event
-                    el_cell.innerHTML = 'Free<br /><br /><br /><br />Space';
-                    el_cell.classList.add('marked');
-                    el_cell.classList.add('marked-free');
+        <script>
+            strings = [
+                "<strong>GHAS Glamour Moment:</strong> Because GitHub Advanced Security is the unsung hero we should all applaud.",
+                "<strong>Enlightening Certification Talk:</strong> Pondering whether that certification could be your key to new opportunities.",
+                "<strong>Custom Trained Model Chic:</strong> Tailor-made AI solutions that set new fashion standards in tech.",
+                "<strong>Deep Dive with LLM:</strong> Journeying to the core of technology and feeling like tech explorers.",
+                "<strong>Human-Centric DevEx:</strong> A gentle reminder that behind every line of code is a human heart.",
+                "<strong>Collaboration Symphony:</strong> Where teamwork and shared vision create beautiful tech music.",
+                "<strong>Generosity via GitHub Sponsors:</strong> Your chance to be a patron of the tech arts.",
+                "<strong>No More Silos:</strong> A hopeful call for unity that has the potential to reshape organizations.",
+                "<strong>Happy Developers, Happy Code:</strong> The mantra that sets the tone for a holistic work environment.",
+                "<strong>Hydration Automation:</strong> If we automated water breaks like code deployments, we'd be the healthiest community ever.",
+                "<strong>Sustainability Aspirations:</strong> Code today for a better tomorrow; it's a mission statement.",
+                "<strong>The AI Paradox:</strong> AI's dual nature makes us think deeply about our own.",
+                "<strong>Enterprise or Starship?</strong> GitHub Enterprise reminds us it's a force to be reckoned with.",
+                "<strong>Open Source Heartbeat:</strong> Those two magical words that fuel our collaborative spirit.",
+                "<strong>Accessibility for All:</strong> The rallying cry for a World Wide Welcome.",
+                "<strong>True to Dogfooding:</strong> We trust our products so much, we use them ourselves.",
+                "<strong>Monorepo Musings:</strong> Where one codebase holds the promise of unity.",
+                "<strong>Rapid Q&A:</strong> The adrenaline rush of a sudden, academic deep dive.",
+                "<strong>Pop Culture Collision:</strong> Where tech meets Star Wars or Marvel, and we're all delighted.",
+                "<strong>No-Code Simplicity:</strong> A nod to the technology that's democratizing development.",
+                "<strong>Breathe In, Code Out:</strong> A crucial reminder that mental health matters.",
+                "<strong>The Fuel Called Coffee:</strong> Paying homage to the unsung hero behind successful code.",
+                "<strong>Microservices Magic:</strong> Small is beautiful, and functional.",
+                "<strong>Serverless Serenity:</strong> A seamless world powered by serverless architecture.",
+                "<strong>Legacy Code Wisdom:</strong> Learning valuable lessons from the code of yesteryears.",
+                "<strong>Time Zones, No Barriers:</strong> We may be miles apart, but we're keystrokes away.",
+                "<strong>DevEx Relief:</strong> That new feature you didn't know you needed, but now can't live without.",
+                "<strong>Enterprise-Only Security:</strong> When GitHub Enterprise becomes the VIP room of tech security.",
+                "<strong>Customization Fiesta:</strong> A celebration of the endless customization Enterprise offers.",
+                "<strong>One More Minute:</strong> Because the best is saved for last.",
+                "<strong>Unexpected Improv:</strong> When a glitch turns into an opportunity for spontaneity.",
+                "<strong>Buzzword Poetry:</strong> Stringing together industry jargon into something almost profound.",
+                "<strong>Open Source Transformations:</strong> Life-changing stories inspired by open-source projects.",
+                "<strong>GitHub Stars Parade:</strong> Celebrating the vanguards of our tech community.",
+                "<strong>AI Grounding:</strong> A reality check that strips away the AI mystique.",
+                "<strong>Ethical AI Pause:</strong> Brief but impactful reflections on AI ethics.",
+                "<strong>AI Bingo-ception:</strong> When buzzwords create a buzzword inception moment.",
+                "<strong>AI's Security Spotlight:</strong> AI steps up as the unsung hero of cybersecurity.",
+                "<strong>Code Scanning Cheers:</strong> Because secure code is happy code.",
+                "<strong>Slide Advance Ballet:</strong> When a hiccup turns into a graceful dance of slides.",
+                "<strong>Unified Laughter:</strong> The awkward moment that makes us all human.",
+                "<strong>Name Recovery:</strong> A small slip-up that turns into a lesson in grace.",
+                "<strong>Octocat Surprise:</strong> The mascot that never fails to bring a smile.",
+                "<strong>Service Overload:</strong> As-a-Service offerings take a comedic turn.",
+                "<strong>Font Size Challenge:</strong> The interactive experience that tests your vision.",
+                "<strong>Timeless Dr. Who Wisdom:</strong> Where past and future converge into quotable moments.",
+                "<strong>Bow Tie Quirkiness:</strong> A nod to those who dare to be different in a sea of sameness.",
+                "<strong>COMDEX Veteran:</strong> Like a tech world's Indiana Jones, treasure troves of floppy disks and vintage Steve Jobs stories in tow.",
+                "<strong>Wi-Fi Woes:</strong> A momentary offline meditation session before the sweet joy of reconnection.",
+                "<strong>Hacker from a '90s Movie Cosplay:</strong> Living proof that nostalgia and tech can beautifully coexist.",
+                "<strong>Google Slides vs. Reality:</strong> The friendly rivalry between Google Slides enthusiasts and PowerPoint purists brings spice to the conference.",
+                "<strong>PowerPoint Complaints:</strong> A palate cleanser in the chatter, refreshing us from coding debates.",
+                "<strong>Demo Machine Crash Applause Request:</strong> A heartwarming display of collective empathy and encouragement.",
+                "<strong>Artificial Enthusiasm Applause:</strong> A poetic reminder that sometimes we're all just trying our best.",
+                "<strong>Polite Applause:</strong> A small act of kindness, no strings attached.",
+                "<strong>Zero Dance Moves During DJ Sets:</strong> Not anti-dance, just pro-contemplation.",
+                "<strong>Hug vs. Fist Bump Confusion:</strong> A charming dance of modern social choreography.",
+                "<strong>Awkward High-Five Attempt:</strong> A wholesome demonstration of the complexity of human interactions.",
+                "<strong>Hubber Running Late for Their Own Session:</strong> A real-time case study in graceful conflict resolution.",
+                "<strong>Vibram Toe Shoes in the Wild:</strong> The epitome of personal freedom and style.",
+                "<strong>Patagonia Sweater Vest Sighting:</strong> A fleece-wrapped emblem of tech's casual elegance.",
+                "<strong>Sticker-Covered Laptop:</strong> A vibrant tapestry telling tales of tech's diversity and openness.",
+                "<strong>One Brave Soul in a Suit Spotted:</strong> The bold adventurer in the realm of casualness, reminding us of the world beyond.",
+                "<strong>Sudden Acronym Overload:</strong> A rousing game of buzzword bingo for the audience.",
+                "<strong>Slide Transition Overload:</strong> A kaleidoscope of effects, reminding us of PowerPoint's earnest beginnings.",
+                "<strong>Too Many Cooks Spoil the Broth:</strong> An exercise in chaos theory, from which clarity may one day emerge.",
+                "<strong>Nostalgia-Driven Tangent:</strong> A delightful detour down memory lane.",
+                "<strong>Captioning Lag Comedy:</strong> Unintentional humor that bridges gaps between speaker and audience.",
+                "<strong>Water Bottle Ballet:</strong> A glimpse of real-world physics amidst digital discourse.",
+                "<strong>Dramatic Reading of User Comments:</strong> A brave space for collective empathy, giving voice to the silent.",
+                "<strong>Unintended Tab Sharing:</strong> A humanizing peek behind the curtain of preparation.",
+                "<strong>The Awkward Dance:</strong> An endearing interplay that mirrors the ebb and flow of team dynamics.",
+                "<strong>Action Overload:</strong> The presenter's vision of a future where automation elevates us all.",
+                "<strong>GitHub Pages Puzzles:</strong> A live exercise in patience and debugging, featuring you as the star.",
+                "<strong>Pull Request Prayers:</strong> A communal moment of hope, echoing through the git universe.",
+                "<strong>Markdown Madness:</strong> When humble README files take the spotlight, if only for a formatting second.",
+                "<strong>Stars vs. Utility Debate:</strong> A fascinating glimpse into the enigma of popularity vs. practicality in the OSS world.",
+                "<strong>Dependabot Diva:</strong> The unsung hero of our codebases, making a celebrity cameo.",
+                "<strong>It Worked on My Machine Admission:</strong> A collective nod to the quirks and unpredictabilities that keep us on our toes.",
+                "<strong>Gist Gems:</strong> A delightful showcase of a speaker's diverse interests beyond code.",
+                "<strong>Repository Revelations:</strong> An exciting journey through the branches of a codebase, unveiling opportunities at every turn.",
+                "<strong>Community Connections:</strong> Genuine moments that foster enduring bonds within the community.",
+                "<strong>Code Scanning Success:</strong> An empowering journey toward fortifying our digital sanctuaries.",
+                "<strong>GitHub Issues Insights:</strong> A transformative look into optimizing online community management.",
+                "<strong>GitHub CLI Mastery:</strong> An inspiring acknowledgement of the continuous learning that elevates us all."
+            ]
+            // Shuffle function to randomize an array
+            function shuffle(array) {
+                var currentIndex = array.length;
+                var temporaryValue;
+                var randomIndex;
+                // While loop to shuffle the array
+                while (0 !== currentIndex) {
+                    randomIndex = Math.floor(Math.random() * currentIndex);
+                    currentIndex -= 1;
+                    // Swap array elements
+                    temporaryValue = array[currentIndex];
+                    array[currentIndex] = array[randomIndex];
+                    array[randomIndex] = temporaryValue;
                 }
-                else {
-                    el_cell.innerHTML = shuffled_strings.pop();
-                    el_cell.addEventListener('click', mark_cell, false);
+                return array;
+            }
+            // Shuffle the 'strings' array and store it in 'shuffled_strings'
+            var shuffled_strings = shuffle(strings);
+            // Get the playCard element from the DOM
+            el_playcard = document.getElementById('playCard');
+            // Loop to create rows and columns
+            for (var row = 0; row < 5; row += 1) {
+                el_row = el_playcard.insertRow(-1);
+
+                for (var col = 0; col < 5; col += 1) {
+                    el_cell = el_row.insertCell(0);
+                    // Check for the "Free Space" at the center of the grid
+                    if (row == 2 && col == 2) {
+                        // Populate cells with shuffled strings and add click event
+                        el_cell.innerHTML = 'Free<br /><br /><br /><br />Space';
+                        el_cell.classList.add('marked');
+                        el_cell.classList.add('marked-free');
+                    }
+                    else {
+                        el_cell.innerHTML = shuffled_strings.pop();
+                        el_cell.addEventListener('click', mark_cell, false);
+                    }
                 }
             }
-        }
-        // Initialize counters and load audio files
-        var bingo_counter = 0;
+            // Initialize counters and load audio files
+            var bingo_counter = 0;
 
-        var marked_sound = new Audio('static/sounds/pop.mp3');
-        marked_sound.load();
-        var bingo_sound = new Audio('static/sounds/win.mp3');
-        bingo_sound.load();
+            var marked_sound = new Audio('static/sounds/pop.mp3');
+            marked_sound.load();
+            var bingo_sound = new Audio('static/sounds/win.mp3');
+            bingo_sound.load();
 
 
-        // Initialize row, column and diagonal counters for Bingo
-        var row_count = [0, 0, 1, 0, 0];  // Row with index 2 starts with a count of 1
-        var col_count = [0, 0, 1, 0, 0];  // Column with index 2 starts with a count of 1
-        var diag_count = [1, 1];  // Both diagonals start with a count of 1
-        var bingo_counter = 0;
-        // Function to mark a cell and check for Bingo conditions
-        function mark_cell(cell) {
-            // Get row and column index of the clicked cell
-            var rowIndex = cell.srcElement.parentElement.rowIndex;
-            var colIndex = cell.srcElement.cellIndex;
+            // Initialize row, column and diagonal counters for Bingo
+            var row_count = [0, 0, 1, 0, 0];  // Row with index 2 starts with a count of 1
+            var col_count = [0, 0, 1, 0, 0];  // Column with index 2 starts with a count of 1
+            var diag_count = [1, 1];  // Both diagonals start with a count of 1
+            var bingo_counter = 0;
+            // Function to mark a cell and check for Bingo conditions
+            function mark_cell(cell) {
+                // Get row and column index of the clicked cell
+                var rowIndex = cell.srcElement.parentElement.rowIndex;
+                var colIndex = cell.srcElement.cellIndex;
 
-            // Increment counters based on the clicked cell's position
-            row_count[rowIndex]++;
-            col_count[colIndex]++;
+                // Increment counters based on the clicked cell's position
+                row_count[rowIndex]++;
+                col_count[colIndex]++;
 
-            // Update the diagonal counters if applicable
-            if (rowIndex === colIndex) {
-                diag_count[0]++;
+                // Update the diagonal counters if applicable
+                if (rowIndex === colIndex) {
+                    diag_count[0]++;
+                }
+                if (rowIndex + colIndex === 4) {
+                    diag_count[1]++;
+                }
+
+                // Remove click event and mark the cell as 'marked'
+                cell.srcElement.removeEventListener('click', mark_cell);
+                cell.srcElement.classList.add('marked');
+                bingo_counter++;
+
+                // Check for winning conditions
+                if (row_count.includes(5) || col_count.includes(5) || diag_count.includes(5)) {
+                    document.querySelectorAll('td').forEach(function (e) {
+                        e.classList.add('rotate-out');
+                    });
+                    bingo_sound.play();
+                    // Display the 'Play Again' button after animation
+                    window.setTimeout(function () {
+                        var play_again = document.getElementById('bingo');
+                        play_again.classList.add('bounce-in');
+                        play_again.style.display = 'block';
+
+                        var bingoCard = document.getElementById('bingoCard');
+                        bingoCard.style.visibility = 'hidden';
+                    }, 400);
+                } else {
+                    // Play the marking sound
+                    marked_sound.play();
+                }
             }
-            if (rowIndex + colIndex === 4) {
-                diag_count[1]++;
-            }
-
-            // Remove click event and mark the cell as 'marked'
-            cell.srcElement.removeEventListener('click', mark_cell);
-            cell.srcElement.classList.add('marked');
-            bingo_counter++;
-
-            // Check for winning conditions
-            if (row_count.includes(5) || col_count.includes(5) || diag_count.includes(5)) {
-                document.querySelectorAll('td').forEach(function (e) {
-                    e.classList.add('rotate-out');
-                });
-                bingo_sound.play();
-                // Display the 'Play Again' button after animation
-                window.setTimeout(function () {
-                    var play_again = document.getElementById('bingo');
-                    play_again.classList.add('bounce-in');
-                    play_again.style.display = 'block';
-
-                    var bingoCard = document.getElementById('bingoCard');
-                    bingoCard.style.visibility = 'hidden';
-                }, 400);
-            } else {
-                // Play the marking sound
-                marked_sound.play();
-            }
-        }
-    </script>
+        </script>
 </body>
 
 </html>
