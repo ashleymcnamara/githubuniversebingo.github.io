@@ -468,6 +468,10 @@ h2,
     }
 }
 
+pink-link {
+    color: #ff507a !important;
+}
+
 h3,
 .h3 {
     font-size: 1.75rem
