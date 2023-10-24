@@ -16,47 +16,56 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <nav class="navbar navbar-expand-lg navbar-dark bg-black">
-        <!-- <a class="navbar-brand" href="https://githubuniverse.com/">GitHub Universe</a> -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- Navbar Toggler -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        
+        <!-- Navbar Menu -->
+        <div class="collapse navbar-collapse" id="mainNavbar">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Menu
+                    <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Open Menu">
+                        Menu
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="https://universebingo.dev">Home</a>
-                        <a class="dropdown-item" href="https://reg.githubuniverse.com/flow/github/universe23/sessioncatalog/page/sessioncatalog">Sessions</a>
-                        <a class="dropdown-item" href="https://reg.githubuniverse.com/flow/github/universe23/sessioncatalog/page/speakercatalog">Speakers</a>
-                        <a class="dropdown-item" href="https://reg.githubuniverse.com/flow/github/universe23/sessioncatalog/login">My Agenda</a>
+                    <div class="dropdown-menu" aria-labelledby="menuDropdown">
+                        <a class="dropdown-item" href="https://universebingo.dev" aria-label="Home">Home</a>
+                        <a class="dropdown-item" href="https://reg.githubuniverse.com/flow/github/universe23/sessioncatalog/page/sessioncatalog" aria-label="Sessions">Sessions</a>
+                        <a class="dropdown-item" href="https://reg.githubuniverse.com/flow/github/universe23/sessioncatalog/page/speakercatalog" aria-label="Speakers">Speakers</a>
+                        <a class="dropdown-item" href="https://reg.githubuniverse.com/flow/github/universe23/sessioncatalog/login" aria-label="My Agenda">My Agenda</a>
                     </div>
                 </li>
             </ul>
         </div>
     </nav>
     <!-- Basic metadata and SEO information -->
+    <!-- Basic metadata -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>GitHub Universe Bingo!</title>
-    <!-- Additional metadata for social sharing -->
     <meta name="description" content="Play GitHub Universe Bingo!">
-    <meta property="og:title" content="GitHub Universe Bingo!">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="GitHub Universe Bingo!">
-    <meta property="og:url" content="https://www.universebingo.dev/">
+    <title>GitHub Universe Bingo!</title>
+    <meta name="description" content="Play GitHub Universe Bingo!">
+    <link rel="canonical" href="https://www.universebingo.dev/" />
+
+    <!-- Open Graph metadata for social sharing -->
     <meta property="og:description" content="It's time to play GitHub Universe Bingo!">
     <meta property="og:image" content="static/images/share.jpg">
+    <meta property="og:site_name" content="GitHub Universe Bingo!">
+    <meta property="og:title" content="GitHub Universe Bingo!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.universebingo.dev/">
+
+    <!-- Twitter Card metadata -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:url" content="https://www.universebingo.dev/">
-    <meta name="twitter:title" content="GitHub Universe Bingo!">
     <meta name="twitter:description" content="It's time to play GitHub Universe Bingo!">
     <meta name="twitter:image" content="static/images/share.jpg">
-    <!-- Linking the main stylesheet -->
+    <meta name="twitter:title" content="GitHub Universe Bingo!">
+    <meta name="twitter:url" content="https://www.universebingo.dev/">
+
+    <!-- Styles and Icons -->
     <link rel="stylesheet" href="static/styles/styles.css">
-    <link rel="shortcut icon" type="image/png" href="static/images/github-logo.png">
-    <link rel="apple-touch-icon-precomposed" href="static/images/github-logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/images/github-logo-16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/images/github-logo-32.png">
 </head>
 
 <body>
