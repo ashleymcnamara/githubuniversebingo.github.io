@@ -163,6 +163,9 @@ a {
     text-decoration: none;
     background-color: transparent
 }
+.spacing-after-img {
+    margin-right: 10px; /* Adjust as needed */
+}
 
 a:hover {
     color: #0056b3;
