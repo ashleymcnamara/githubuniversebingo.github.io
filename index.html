@@ -248,7 +248,6 @@
 
             // Check for winning conditions
             if (row_count.includes(5) || col_count.includes(5) || diag_count.includes(5)) {
-                // Your existing win code here...
                 document.querySelectorAll('td').forEach(function (e) {
                     e.classList.add('rotate-out');
                 });
