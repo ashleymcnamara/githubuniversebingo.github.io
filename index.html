@@ -83,40 +83,50 @@
         </header>
         <!-- Bingo announcement div, initially hidden -->
         <div id="bingo" class="responsive-img">
-            <h1 class="my-4 display-1">YOU GOT A BINGO!</h1>
-            <a class="btn btn-primary" href="?">Play again?</a>
-            <a class="btn btn-primary ml-2" target="_blank"
-                href="http://twitter.com/intent/tweet?text=I+got+a+BINGO!&url=https%3A%2F%2Funiversebingo.dev%2F&hashtags=UniverseBingo,WINNER">
-                Tweet
-                This
-            </a><br><br>
-            <img src="static/images/mona_star.png" alt="Mona Star" class="responsive-img"><br><br>
+            <h1 class="my-4 display-1 text-center">YOU WON!!!</h1>
+            <div class="button-group text-center">
+                <a class="btn btn-primary" href="?" aria-label="Play again">Play Again</a>
+                <a class="btn btn-primary ml-2" target="_blank" aria-label="Tweet your win"
+                    href="http://twitter.com/intent/tweet?text=I+got+a+BINGO!&url=https%3A%2F%2Funiversebingo.dev%2F&hashtags=UniverseBingo,WINNER">
+                    Tweet This
+                </a>
+            </div>
+            <div class="image-container text-center">
+                <img src="static/images/mona_star.png" alt="Mona Star" class="responsive-img">
+            </div>
         </div>
-        <!-- Bingo announcement div, initially hidden -->
-        <div class="table-responsive">
-            <table id="bingoCard" class="my-4 mx-auto">
-                <tbody id="playCard"></tbody>
-            </table>
-        </div>
-        <!-- Footer Section -->
-        <footer>
-            <a class="btn btn-outline-success mr-2 new-bingo-card" href="?">New Bingo Card</a>
-            <a class="btn btn-outline-primary custom-primary ml-2" target="_blank"
-                href="https://twitter.com/intent/tweet?text=I+am+playing+GitHub+Universe+Keynote+Bingo!&url=https%3A%2F%2Funiversebingo.dev%2F&hashtags=UniverseBingo">
-                Tweet
-                This
-            </a>
-            <!-- Footer Section -->
-            <p class="mt-4 small">
-                Made with love by
-                <a target="_blank" href="https://twitter.com/ashleymcnamara" style="color: #4ac26b;">@ashleymcnamara</a>
-                and inspired by <a target="_blank" href="https://github.com/keynotebingo/keynotebingo.github.io" style="color: #4ac26b;">keynotebingo.github.io</a>
-            </p>
-        </footer>
-        <div id="imageSection">
-            <img src="static/images/bingo_footer.webp" alt="universe footer" class="responsive-img">
-        </div>
+        <!-- Table Section for Bingo Card -->
+<div class="table-responsive">
+    <table id="bingoCard" class="my-4 mx-auto" aria-label="Bingo Card">
+        <tbody id="playCard"></tbody>
+    </table>
+</div>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <!-- Action Buttons -->
+    <div class="footer-action-buttons">
+        <a class="btn btn-outline-success mr-2 new-bingo-card" href="?" aria-label="Generate a new bingo card">New Bingo Card</a>
+        <a class="btn btn-outline-primary custom-primary ml-2" target="_blank" aria-label="Tweet about your Bingo game"
+            href="https://twitter.com/intent/tweet?text=I+am+playing+GitHub+Universe+Keynote+Bingo!&url=https%3A%2F%2Funiversebingo.dev%2F&hashtags=UniverseBingo">
+            Tweet This
+        </a>
     </div>
+    
+    <!-- Footer Credits -->
+    <p class="mt-4 small">
+        Made with love by 
+        <a target="_blank" href="https://twitter.com/ashleymcnamara" style="color: #4ac26b;" aria-label="Ashley's Twitter">@ashleymcnamara</a> 
+        and inspired by 
+        <a target="_blank" href="https://github.com/keynotebingo/keynotebingo.github.io" style="color: #4ac26b;" aria-label="Keynote Bingo on GitHub">keynotebingo.github.io</a>
+    </p>
+</footer>
+
+<!-- Image Section -->
+<div id="imageSection">
+    <img src="static/images/bingo_footer.webp" alt="Universe footer" class="responsive-img" aria-label="Universe footer image">
+</div>
+
     <script>
         strings = [
             "<strong>GHAS Glamour Moment:</strong> Because GitHub Advanced Security is the unsung hero we should all applaud.",
