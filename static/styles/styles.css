@@ -142,6 +142,13 @@ small {
     font-size: 80%
 }
 
+.dropdown-menu {
+    background-color: black;
+}
+.dropdown-item {
+    color: white;
+}
+
 sub,
 sup {
     position: relative;
