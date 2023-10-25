@@ -2,19 +2,68 @@
 <html lang="en">
 
 <head>
-    <!-- Google tag (gtag.js) -->
+    <!-- Basic Metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- SEO Information -->
+    <meta name="description" content="Engage with GitHub Universe 2023 in a fun, interactive way! Play GitHub Universe Bingo for a chance to win bragging rights. Ideal for developers, tech enthusiasts, and GitHub fans.">
+    <meta name="keywords" content="GitHub, Bingo, Universe, Tech Conference, Game">
+    <meta name="author" content="Ashley Willis">
+    <title>GitHub Universe Bingo!</title>
+    <link rel="canonical" href="https://www.universebingo.dev/">
+
+    <!-- Favicon -->
+    <link rel="icon" href="static/images/favicon.ico" type="image/x-icon">
+
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q5WE9QHF67"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-Q5WE9QHF67');
     </script>
+
+    <!-- External Libraries and Frameworks -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="static/styles/styles.css">
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "name": "GitHub Universe Bingo",
+            "url": "https://www.universebingo.dev/",
+            "description": "Engage with GitHub Universe 2023 in a fun, interactive way! Play GitHub Universe Bingo for a chance to win bragging rights. Ideal for developers, tech enthusiasts, and GitHub fans"
+        }
+    </script>
+
+    <!-- Open Graph & Twitter Card Meta Tags -->
+    <meta property="og:title" content="GitHub Universe Bingo!">
+    <meta property="og:description" content="Play GitHub Universe Bingo!">
+    <meta property="og:image" content="https://www.universebingo.dev/static/images/play_bingo.jpg">
+    <meta property="og:image:alt" content="GitHub Universe Bingo Card">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.universebingo.dev/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:description" content="It's time to play GitHub Universe Bingo!">
+    <meta name="twitter:title" content="GitHub Universe Bingo!">
+    <meta name="twitter:url" content="https://www.universebingo.dev/">
+</head>
+<!-- End of head section -->
+
+<!-- Start of body content -->
+
+<body>
+
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-black">
         <!-- Navbar Toggler -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar"
@@ -27,137 +76,101 @@
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false" aria-label="Open Menu">
+                        aria-haspopup="true" aria-expanded="false">
                         Menu
                     </a>
                     <div class="dropdown-menu" aria-labelledby="menuDropdown">
-                        <a class="dropdown-item" href="https://universebingo.dev" aria-label="Home">Home</a>
+                        <a class="dropdown-item" href="https://universebingo.dev">Home</a>
                         <a class="dropdown-item"
-                            href="https://reg.githubuniverse.com/flow/github/universe23/sessioncatalog/page/sessioncatalog"
-                            aria-label="Sessions">Sessions</a>
+                            href="https://reg.githubuniverse.com/flow/github/universe23/sessioncatalog/page/sessioncatalog">Sessions</a>
                         <a class="dropdown-item"
-                            href="https://reg.githubuniverse.com/flow/github/universe23/sessioncatalog/page/speakercatalog"
-                            aria-label="Speakers">Speakers</a>
+                            href="https://reg.githubuniverse.com/flow/github/universe23/sessioncatalog/page/speakercatalog">Speakers</a>
                         <a class="dropdown-item"
-                            href="https://reg.githubuniverse.com/flow/github/universe23/sessioncatalog/login"
-                            aria-label="My Agenda">My Agenda</a>
+                            href="https://reg.githubuniverse.com/flow/github/universe23/sessioncatalog/login">My
+                            Agenda</a>
                     </div>
                 </li>
             </ul>
         </div>
     </nav>
-    <!-- Basic metadata and SEO information -->
-    <!-- Basic metadata -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description"
-        content="Engage with GitHub Universe 2023 in a fun, interactive way! Play GitHub Universe Bingo for a chance to win bragging rights. Ideal for developers, tech enthusiasts, and GitHub fans.">
-    <meta name="keywords" content="GitHub, Bingo, Universe, Tech Conference, Game">
-    <meta name="author" content="Ashley Willis">
-    <title>GitHub Universe Bingo!</title>
-    <link rel="canonical" href="https://www.universebingo.dev/">
-    <link rel="icon" href="static/images/favicon.ico" type="image/x-icon">
-    <!-- Open Graph meta tags -->
-    <meta property="og:title" content="GitHub Universe Bingo!">
-    <meta property="og:description" content="Play GitHub Universe Bingo!">
-    <meta property="og:image" content="https://www.universebingo.dev/static/images/play_bingo.jpg">
-    <meta property="og:image:alt" content="GitHub Universe Bingo Card">
-    <!-- Schema Markup -->
-    <script type="application/ld+json">
-        {
-            "@context": "http://schema.org",
-            "@type": "WebSite",
-            "name": "GitHub Universe Bingo",
-            "url": "https://www.universebingo.dev/",
-            "description": "Engage with GitHub Universe 2023 in a fun, interactive way! Play GitHub Universe Bingo for a chance to win bragging rights. Ideal for developers, tech enthusiasts, and GitHub fans"
-        }
-    </script>
-    <!-- Open Graph metadata for social sharing -->
-    <meta property="og:description" content="It's time to play GitHub Universe Bingo!">
-    <meta property="og:image" content="https://www.universebingo.dev/static/images/play_bingo.jpg">
-    <meta property="og:site_name" content="GitHub Universe Bingo!">
-    <meta property="og:title" content="GitHub Universe Bingo!">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.universebingo.dev/">
+    <!-- End of Navigation Bar -->
 
-    <!-- Twitter Card metadata -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:description" content="It's time to play GitHub Universe Bingo!">
-    <meta property="og:image" content="https://www.universebingo.dev/static/images/play_bingo.jpg">
-    <meta name="twitter:title" content="GitHub Universe Bingo!">
-    <meta name="twitter:url" content="https://www.universebingo.dev/">
+    <body>
+        <!-- Header Image Section -->
+   
+<div id="imageSection">
+    <img src="static/images/universe_header.webp" alt="Universe header" class="responsive-img"
+        aria-label="Universe header image">
+</div>
+      
 
-    <!-- Styles and Icons -->
-    <link rel="stylesheet" href="static/styles/styles.css">
-    <link rel="icon" type="image/png" sizes="16x16" href="static/images/github-logo-16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="static/images/github-logo-32.png">
-</head>
+        <!-- Main Content Container -->
+        <div class="responsive-img">
 
-<body>
-    <!-- Image Section at the top -->
-    <div id="imageSection">
-        <img src="static/images/universe_header.webp" alt="universe footer" class="responsive-img">
-    </div>
-    <!-- Main content container -->
-    <div class="responsive-img">
-        <!-- Header Section -->
-        <header>
-            <h1 class="my-4 display-4"
-                style="font-family: 'MonaSans', sans-serif; font-weight: 900; font-stretch: 75%; letter-spacing: -0.01em;">
-                GitHub Universe Bingo!</h1>
-            <h2 class="mb-4 h5">
-                <a href="https://githubuniverse.com/" style="color: #ffffff;">California Streaming - November 8-9
-                    2023</a>
-            </h2>
-        </header>
+            <!-- Header Section -->
+            <header>
+                <h1 class="my-4 display-4"
+                    style="font-family: 'MonaSans', sans-serif; font-weight: 900; font-stretch: 75%; letter-spacing: -0.01em;">
+                    GitHub Universe Bingo!
+                </h1>
+                <h2 class="mb-4 h5">
+                    <a href="https://githubuniverse.com/" style="color: #ffffff;">California Streaming - November 8-9 2023</a>
+                </h2>
+            </header>
 
-        <!-- Bingo announcement div, initially hidden -->
-        <div id="bingo" class="responsive-img">
-            <h1 class="my-4 display-1 text-center">YOU WON!!!</h1>
-            <div class="button-group text-center">
-                <a class="btn btn-primary ml-2 Button--gradient" href="" aria-label="Play again">Play Again</a>
-                <a class="btn btn-primary ml-2 Button--gradient" target="_blank" aria-label="Tweet your win"
-                    href="http://twitter.com/intent/tweet?text=I+got+a+BINGO!&url=https%3A%2F%2Funiversebingo.dev%2F&hashtags=UniverseBingo,WINNER">
-                    Tweet This
-                </a>
-
+            <!-- Bingo Announcement Section (Initially Hidden) -->
+            <div id="bingo" class="responsive-img">
+                <!-- Bingo Winning Message -->
+                <h1 class="my-4 display-1 text-center">YOU WON!!!</h1>
+                <div class="button-group text-center">
+                    <!-- Action Buttons -->
+                    <a class="btn btn-primary ml-2 Button--gradient" href="" aria-label="Play again">Play Again</a>
+                    <a class="btn btn-primary ml-2 Button--gradient" target="_blank" aria-label="Tweet your win"
+                        href="http://twitter.com/intent/tweet?text=I+got+a+BINGO!&url=https%3A%2F%2Funiversebingo.dev%2F&hashtags=UniverseBingo,WINNER">
+                        Tweet This
+                    </a>
+                </div>
+                <!-- Winning Image -->
+                <div class="image-container text-center">
+                    <img src="static/images/mona_star.png" alt="Mona Star" class="responsive-img">
+                </div>
             </div>
-            <div class="image-container text-center">
-                <img src="static/images/mona_star.png" alt="Mona Star" class="responsive-img">
+
+            <!-- Bingo Card Table Section -->
+            <div class="table-responsive">
+                <table id="bingoCard" class="my-4 mx-auto" aria-label="Bingo Card">
+                    <tbody id="playCard"></tbody>
+                </table>
             </div>
+
+            <!-- Footer Section -->
+            <footer class="footer">
+
+                <!-- Footer Action Buttons -->
+                <div class="footer-action-buttons">
+                    <a class="btn btn-primary ml-2 Button--gradient" href="" aria-label="Generate a new bingo card">
+                        New Bingo Card
+                    </a>
+                    <a class="btn btn-primary ml-2 Button--gradient" target="_blank"
+                        aria-label="Tweet about your Bingo game"
+                        href="https://twitter.com/intent/tweet?text=I+am+playing+GitHub+Universe+Keynote+Bingo!&url=https%3A%2F%2Funiversebingo.dev%2F&hashtags=UniverseBingo">
+                        Tweet This
+                    </a><br /><br />
+                </div>
+
+                <!-- Footer Credits (Commented Out for Now) -->
+                <!-- 
+        <p class="mt-4 small">
+            Made with love by
+            <a target="_blank" href="https://twitter.com/ashleymcnamara" style="color: #4ac26b;"
+                aria-label="Ashley's Twitter">@ashleymcnamara</a>
+            and inspired by
+            <a target="_blank" href="https://github.com/keynotebingo/keynotebingo.github.io" style="color: #4ac26b;"
+                aria-label="Keynote Bingo on GitHub">keynotebingo.github.io</a>
+        </p>
+        -->
+            </footer>
         </div>
-        <!-- Table Section for Bingo Card -->
-        <div class="table-responsive">
-            <table id="bingoCard" class="my-4 mx-auto" aria-label="Bingo Card">
-                <tbody id="playCard"></tbody>
-            </table>
-        </div>
-
-        <!-- Footer Section -->
-        <footer class="footer">
-            <!-- Action Buttons -->
-            <div class="footer-action-buttons">
-                <a class="btn btn-primary ml-2 Button--gradient" href="" aria-label="Generate a new bingo card">
-                    New Bingo Card
-                </a>
-                <a class="btn btn-primary ml-2 Button--gradient" target="_blank"
-                    aria-label="Tweet about your Bingo game"
-                    href="https://twitter.com/intent/tweet?text=I+am+playing+GitHub+Universe+Keynote+Bingo!&url=https%3A%2F%2Funiversebingo.dev%2F&hashtags=UniverseBingo">
-                    Tweet This
-                </a><br /><br />
-            </div>
-
-            <!-- Footer Credits -->
-            <!-- <p class="mt-4 small">
-                Made with love by
-                <a target="_blank" href="https://twitter.com/ashleymcnamara" style="color: #4ac26b;"
-                    aria-label="Ashley's Twitter">@ashleymcnamara</a>
-                and inspired by
-                <a target="_blank" href="https://github.com/keynotebingo/keynotebingo.github.io" style="color: #4ac26b;"
-                    aria-label="Keynote Bingo on GitHub">keynotebingo.github.io</a>
-            </p> -->
-        </footer>
-
         <!-- Image Section -->
         <div id="imageSection">
             <img src="static/images/bingo_footer.webp" alt="Universe footer" class="responsive-img"
@@ -167,183 +180,178 @@
         <script>
             strings = [
                 "GHAS Mention",
-        "Certification Talk",
-        "Custom Model Talk",
-        "LLM Deep Dive",
-        "Human-Centric DevEx",
-        "Collaboration Symphony",
-        "GitHub Sponsors Mention",
-        "Breaking Silos",
-        "Happy Devs & Code",
-        "Automation Talk",
-        "Code for Tomorrow Mention",
-        "AI Paradox",
-        "Enterprise or Starship?",
-        "Open Source Mention",
-        "Accessibility for All",
-        "Dogfooding Talk",
-        "Monorepo Mention",
-        "Rapid Q&A",
-        "Pop Culture Reference",
-        "No-Code / Low Code Talk",
-        "Mediation Time",
-        "More Coffee Mention",
-        "Microservices Magic",
-        "Serverless Talk",
-        "Legacy Code Wisdom",
-        "Time Zones Unite",
-        "DevEx Talk",
-        "Security Talk",
-        "Customization Galore",
-        "Improv Opportunity",
-        "Buzzword Poetry",
-        "Open Source Stories",
-        "GitHub Stars Mention",
-        "AI Reality Check",
-        "Ethical AI",
-        "AI Bingo-ception",
-        "AI Security Hero",
-        "Code Scanning Cheers",
-        "Slide Ballet",
-        "Unified Laughter",
-        "MONA SIGHTING",
-        "Font Size Test",
-        "Dr. Who Wisdom",
-        "Bow Tie Sighting",
-        "GitHub Down Irony",
-        "COMDEX Veteran",
-        "Wi-Fi Meditation",
-        "'90s Hacker Cosplay",
-        "Slides vs Reality",
-        "PowerPoint Palate",
-        "Demo Crash Applause",
-        "Forced Applause",
-        "Polite Applause",
-        "No Dance Moves",
-        "Hug or Fist Bump?",
-        "Awkward High-Five",
-        "Late Hubber",
-        "Vibram Sighting",
-        "Patagonia Vest",
-        "Sticker Laptop",
-        "Lone Suit",
-        "Acronym Overload",
-        "Transition Chaos",
-        "Nostalgic Tangent",
-        "Captioning Lag",
-        "User Comment Drama",
-        "Tab Share Peek",
-        "Awkward Dance",
-        "Action Overload",
-        "Pages Puzzle",
-        "PR Prayers",
-        "Markdown Spotlight",
-        "Dependabot Diva",
-        "It Worked On My Machine",
-        "Gist Showcase",
-        "Repo Revelations",
-        "Community Bonds",
-        "Scanning Success",
-        "Issues Insight",
-        "CLI Mastery"
+                "Certification Talk",
+                "Custom Model Talk",
+                "LLM Deep Dive",
+                "Human-Centric DevEx",
+                "Collaboration Symphony",
+                "GitHub Sponsors Mention",
+                "Breaking Silos",
+                "Happy Devs & Code",
+                "Automation Talk",
+                "Code for Tomorrow Mention",
+                "AI Paradox",
+                "Enterprise or Starship?",
+                "Open Source Mention",
+                "Accessibility for All",
+                "Dogfooding Talk",
+                "Monorepo Mention",
+                "Rapid Q&A",
+                "Pop Culture Reference",
+                "No-Code / Low Code Talk",
+                "Mediation Time",
+                "More Coffee Mention",
+                "Microservices Magic",
+                "Serverless Talk",
+                "Legacy Code Wisdom",
+                "Time Zones Unite",
+                "DevEx Talk",
+                "Security Talk",
+                "Customization Galore",
+                "Improv Opportunity",
+                "Buzzword Poetry",
+                "Open Source Stories",
+                "GitHub Stars Mention",
+                "AI Reality Check",
+                "Ethical AI",
+                "AI Bingo-ception",
+                "AI Security Hero",
+                "Code Scanning Cheers",
+                "Slide Ballet",
+                "Unified Laughter",
+                "MONA SIGHTING",
+                "Font Size Test",
+                "Dr. Who Wisdom",
+                "Bow Tie Sighting",
+                "GitHub Down Irony",
+                "COMDEX Veteran",
+                "Wi-Fi Meditation",
+                "'90s Hacker Cosplay",
+                "Slides vs Reality",
+                "PowerPoint Palate",
+                "Demo Crash Applause",
+                "Forced Applause",
+                "Polite Applause",
+                "No Dance Moves",
+                "Hug or Fist Bump?",
+                "Awkward High-Five",
+                "Late Hubber",
+                "Vibram Sighting",
+                "Patagonia Vest",
+                "Sticker Laptop",
+                "Lone Suit",
+                "Acronym Overload",
+                "Transition Chaos",
+                "Nostalgic Tangent",
+                "Captioning Lag",
+                "User Comment Drama",
+                "Tab Share Peek",
+                "Awkward Dance",
+                "Action Overload",
+                "Pages Puzzle",
+                "PR Prayers",
+                "Markdown Spotlight",
+                "Dependabot Diva",
+                "It Worked On My Machine",
+                "Gist Showcase",
+                "Repo Revelations",
+                "Community Bonds",
+                "Scanning Success",
+                "Issues Insight",
+                "CLI Mastery"
             ]
-            // Shuffle function to randomize an array
+            // Main JavaScript code wrapped inside the HTML file
+
+            // Function to shuffle an array
             function shuffle(array) {
                 var currentIndex = array.length;
                 var temporaryValue;
                 var randomIndex;
-                // While loop to shuffle the array
-                while (0 !== currentIndex) {
+
+                // Shuffle the array using a while loop
+                while (currentIndex !== 0) {
                     randomIndex = Math.floor(Math.random() * currentIndex);
                     currentIndex -= 1;
-                    // Swap array elements
+
+                    // Swap elements in the array
                     temporaryValue = array[currentIndex];
                     array[currentIndex] = array[randomIndex];
                     array[randomIndex] = temporaryValue;
                 }
                 return array;
             }
+
             // Shuffle the 'strings' array and store it in 'shuffled_strings'
             var shuffled_strings = shuffle(strings);
-            // Get the playCard element from the DOM
-            el_playcard = document.getElementById('playCard');
-            // Loop to create rows and columns
-            for (var row = 0; row < 5; row += 1) {
-                el_row = el_playcard.insertRow(-1);
 
-                for (var col = 0; col < 5; col += 1) {
-                    el_cell = el_row.insertCell(0);
-                    // Check for the "Free Space" at the center of the grid
-                    if (row == 2 && col == 2) {
-                        // Populate cells with shuffled strings and add click event
+            // Initialize and fetch elements from DOM
+            var el_playcard = document.getElementById('playCard');
+
+            // Loop through to create the rows and columns for the Bingo card
+            for (var row = 0; row < 5; row++) {
+                var el_row = el_playcard.insertRow(-1);
+
+                for (var col = 0; col < 5; col++) {
+                    var el_cell = el_row.insertCell(0);
+
+                    // Check for "Free Space" at the center of the grid
+                    if (row === 2 && col === 2) {
                         el_cell.innerHTML = 'Free<br /><br /><br /><br />Space';
-                        el_cell.classList.add('marked');
-                        el_cell.classList.add('marked-free');
-                    }
-                    else {
+                        el_cell.classList.add('marked', 'marked-free');
+                    } else {
                         el_cell.innerHTML = shuffled_strings.pop();
                         el_cell.addEventListener('click', mark_cell, false);
                     }
                 }
             }
-            // Initialize counters and load audio files
-            var bingo_counter = 0;
 
+            // Initialize counters and load audio assets
+            var bingo_counter = 0;
             var marked_sound = new Audio('static/sounds/pop.mp3');
-            marked_sound.load();
             var bingo_sound = new Audio('static/sounds/win.mp3');
+
+            marked_sound.load();
             bingo_sound.load();
 
+            // Initialize counters for rows, columns, and diagonals for Bingo checks
+            var row_count = [0, 0, 1, 0, 0];
+            var col_count = [0, 0, 1, 0, 0];
+            var diag_count = [1, 1];
 
-            // Initialize row, column and diagonal counters for Bingo
-            var row_count = [0, 0, 1, 0, 0];  // Row with index 2 starts with a count of 1
-            var col_count = [0, 0, 1, 0, 0];  // Column with index 2 starts with a count of 1
-            var diag_count = [1, 1];  // Both diagonals start with a count of 1
-            var bingo_counter = 0;
-            // Function to mark a cell and check for Bingo conditions
+            // Function to mark a cell and check for Bingo win conditions
             function mark_cell(cell) {
-                // Get row and column index of the clicked cell
                 var rowIndex = cell.srcElement.parentElement.rowIndex;
                 var colIndex = cell.srcElement.cellIndex;
 
-                // Increment counters based on the clicked cell's position
+                // Update counters based on clicked cell position
                 row_count[rowIndex]++;
                 col_count[colIndex]++;
 
-                // Update the diagonal counters if applicable
-                if (rowIndex === colIndex) {
-                    diag_count[0]++;
-                }
-                if (rowIndex + colIndex === 4) {
-                    diag_count[1]++;
-                }
+                // Update diagonal counters if clicked cell is on a diagonal
+                if (rowIndex === colIndex) diag_count[0]++;
+                if (rowIndex + colIndex === 4) diag_count[1]++;
 
-                // Remove click event and mark the cell as 'marked'
+                // Remove click event and mark cell
                 cell.srcElement.removeEventListener('click', mark_cell);
                 cell.srcElement.classList.add('marked');
-                bingo_counter++;
 
-                // Check for winning conditions
+                // Check for Bingo win conditions
                 if (row_count.includes(5) || col_count.includes(5) || diag_count.includes(5)) {
-                    document.querySelectorAll('td').forEach(function (e) {
-                        e.classList.add('rotate-out');
-                    });
+                    document.querySelectorAll('td').forEach(e => e.classList.add('rotate-out'));
                     bingo_sound.play();
-                    // Display the 'Play Again' button after animation
-                    window.setTimeout(function () {
+
+                    // Reveal the 'Play Again' button after animation ends
+                    setTimeout(() => {
                         var play_again = document.getElementById('bingo');
                         play_again.classList.add('bounce-in');
                         play_again.style.display = 'block';
-
-                        var bingoCard = document.getElementById('bingoCard');
-                        bingoCard.style.visibility = 'hidden';
                     }, 400);
                 } else {
-                    // Play the marking sound
+                    // Play the sound for marking a cell
                     marked_sound.play();
                 }
             }
         </script>
-</body>
+    </body>
 
 </html>

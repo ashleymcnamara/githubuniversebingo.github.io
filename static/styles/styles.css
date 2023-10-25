@@ -266,6 +266,12 @@ svg {
     vertical-align: middle
 }
 
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Prevent the "Menu" text from turning purple when hovered */
 .nav-link.dropdown-toggle:hover {
     background-color: transparent !important;
@@ -3283,6 +3289,17 @@ button.bg-dark:focus {
     display: block;
     content: ""
 }
+
+.responsive-img {
+    width: 100% !important; /* Set the width to 100% of its parent */
+    height: auto !important; /* Auto-scale the height relative to the width */
+}
+
+#imageSection {
+    width: 100% !important;
+}
+
+
 
 .embed-responsive .embed-responsive-item,
 .embed-responsive iframe,
