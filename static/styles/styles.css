@@ -303,43 +303,47 @@ textarea {
     line-height: inherit
 }
 
-Copy code
+/* Basic button style */
 .Button--gradient {
-    --Button--gradient-size: 2px;
-    --Button--gradient-bg-color: var(--site-bg-color);
-    --Button--gradient-bg-image: linear-gradient(166deg,#ff507a,#7d51df 33%,#2265de 66%,#0bc786);
-    position: relative;
-    box-sizing: border-box;
-    white-space: nowrap;
-    background-color: var(--Button--gradient-bg-color);
-    background-clip: padding-box;
-    border: var(--Button--gradient-size) solid transparent;
-    box-shadow: none;
+    position: relative !important;
+    box-sizing: border-box !important;
+    white-space: nowrap !important;
+    background-color: black !important;
+    /* Black background */
+    color: white !important;
+    /* White text */
+    border: 2px solid transparent !important;
+    /* Transparent border */
 }
 
+/* Gradient border */
 .Button--gradient:before {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    margin: calc(-1 * var(--Button--gradient-size));
-    content: "";
-    background-image: var(--Button--gradient-bg-image);
-    border-radius: inherit;
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    z-index: -1 !important;
+    margin: -2px !important;
+    /* Equal to border width */
+    content: "" !important;
+    border-radius: inherit !important;
+    background-image: linear-gradient(166deg, #ff507a, #7d51df 33%, #2265de 66%, #0bc786) !important;
 }
 
+/* Gradient background on hover */
 .Button--gradient:hover {
-    background-color: var(--Button--gradient-bg-color)!important;
-    box-shadow: 0 0 0 1px currentColor!important;
+    background-image: linear-gradient(166deg, #ff507a, #7d51df 33%, #2265de 66%, #0bc786) !important;
+    border: 2px solid currentColor !important;
 }
 
- /* General navbar styling */
- .navbar {
+
+/* General navbar styling */
+.navbar {
     font-family: 'Arial', sans-serif;
-    background-color: black; 
-    box-shadow: 0 2px 4px #8250df; /* Adding specific purple box-shadow */
+    background-color: black;
+    box-shadow: 0 2px 4px #8250df;
+    /* Adding specific purple box-shadow */
 }
 /* Dropdown menu styling */
 .dropdown-menu {
