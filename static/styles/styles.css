@@ -35,10 +35,11 @@
     box-sizing: border-box
 }
 
-@font-face { 
-    font-family: 'MonaSans'; 
-    src: url('/static/styles/Mona-Sans.ttf') format('truetype'); 
-    font-weight: normal; /* Use 'bold' here if you have a bold version of the font */ 
+@font-face {
+    font-family: 'MonaSans';
+    src: url('/static/styles/Mona-Sans.ttf') format('truetype');
+    font-weight: normal;
+    /* Use 'bold' here if you have a bold version of the font */
 }
 
 
@@ -64,14 +65,14 @@ section {
 
 body {
     margin: 0;
-    font-family: 'MonaSans', Arial, sans-serif; /* Use the custom font with fallbacks */
+    font-family: 'MonaSans', Arial, sans-serif;
+    /* Use the custom font with fallbacks */
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
     color: #ffffff;
     text-align: left;
     background-color: #000000
-    
 }
 
 [tabindex="-1"]:focus {
@@ -140,7 +141,7 @@ dd {
 .Button--gradient {
     --Button--gradient-size: 2px;
     --Button--gradient-bg-color: var(--site-bg-color);
-    --Button--gradient-bg-image: linear-gradient(166deg,#ff507a,#7d51df 33%,#2265de 66%,#0bc786);
+    --Button--gradient-bg-image: linear-gradient(166deg, #ff507a, #7d51df 33%, #2265de 66%, #0bc786);
     position: relative;
     box-sizing: border-box;
     white-space: nowrap;
@@ -164,8 +165,8 @@ dd {
 }
 
 .Button--gradient:hover {
-    background-color: var(--Button--gradient-bg-color)!important;
-    box-shadow: 0 0 0 1px currentColor!important;
+    background-color: var(--Button--gradient-bg-color) !important;
+    box-shadow: 0 0 0 1px currentColor !important;
 }
 
 
@@ -185,6 +186,7 @@ small {
 .dropdown-menu {
     background-color: black;
 }
+
 .dropdown-item {
     color: white;
 }
@@ -210,8 +212,10 @@ a {
     text-decoration: none;
     background-color: transparent
 }
+
 .spacing-after-img {
-    margin-right: 10px; /* Adjust as needed */
+    margin-right: 10px;
+    /* Adjust as needed */
 }
 
 a:hover {
@@ -262,6 +266,37 @@ svg {
     vertical-align: middle
 }
 
+/* Prevent the "Menu" text from turning purple when hovered */
+.nav-link.dropdown-toggle:hover {
+    background-color: transparent !important;
+    color: white !important;
+}
+
+/* Ensure menu text is white */
+.nav-link {
+    color: white !important;
+}
+
+/* Change the background to purple on hover, while keeping the text white */
+.nav-link:hover {
+    background-color: #7d51df !important;
+    /* Specific purple color */
+    color: white !important;
+}
+
+/* For dropdown items */
+.dropdown-item {
+    color: white !important;
+}
+
+
+/* Change the background to purple on hover for dropdown items only, while keeping the text white */
+.dropdown-item:hover {
+    background-color: #7d51df !important;
+    /* Specific purple color */
+    color: white !important;
+}
+
 table {
     border-collapse: collapse
 }
@@ -282,7 +317,6 @@ label {
     display: inline-block;
     margin-bottom: 0.5rem
 }
-
 button {
     border-radius: 0
 }
