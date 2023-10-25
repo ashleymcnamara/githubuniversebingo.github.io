@@ -26,7 +26,7 @@
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1200px;
     --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "MonaSans"
 }
 
 *,
@@ -34,9 +34,11 @@
 *::after {
     box-sizing: border-box
 }
-@font-face {
-    font-family: 'MonaSans'; /* You can name it however you like */
-    src: url('/static/styles/Mona-Sans.ttf') format('truetype'); /* Path to the font file */
+
+@font-face { 
+    font-family: 'MonaSans'; 
+    src: url('/static/styles/Mona-Sans.ttf') format('truetype'); 
+    font-weight: normal; /* Use 'bold' here if you have a bold version of the font */ 
 }
 
 
