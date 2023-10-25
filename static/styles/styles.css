@@ -137,6 +137,38 @@ dd {
     margin-left: 0
 }
 
+.Button--gradient {
+    --Button--gradient-size: 2px;
+    --Button--gradient-bg-color: var(--site-bg-color);
+    --Button--gradient-bg-image: linear-gradient(166deg,#ff507a,#7d51df 33%,#2265de 66%,#0bc786);
+    position: relative;
+    box-sizing: border-box;
+    white-space: nowrap;
+    background-color: var(--Button--gradient-bg-color);
+    background-clip: padding-box;
+    border: var(--Button--gradient-size) solid transparent;
+    box-shadow: none;
+}
+
+.Button--gradient:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: calc(-1 * var(--Button--gradient-size));
+    content: "";
+    background-image: var(--Button--gradient-bg-image);
+    border-radius: inherit;
+}
+
+.Button--gradient:hover {
+    background-color: var(--Button--gradient-bg-color)!important;
+    box-shadow: 0 0 0 1px currentColor!important;
+}
+
+
 blockquote {
     margin: 0 0 1rem
 }
