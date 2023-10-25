@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- SEO Information -->
-    <meta name="description" content="Engage with GitHub Universe 2023 in a fun, interactive way! Play GitHub Universe Bingo for a chance to win bragging rights. Ideal for developers, tech enthusiasts, and GitHub fans.">
+    <meta name="description"
+        content="Engage with GitHub Universe 2023 in a fun, interactive way! Play GitHub Universe Bingo for a chance to win bragging rights. Ideal for developers, tech enthusiasts, and GitHub fans.">
     <meta name="keywords" content="GitHub, Bingo, Universe, Tech Conference, Game">
     <meta name="author" content="Ashley Willis">
     <title>GitHub Universe Bingo!</title>
@@ -53,7 +54,8 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.universebingo.dev/">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:description" content="It's time to play GitHub Universe Bingo!">
+    <meta name="twitter:description"
+        content="Engage with GitHub Universe 2023 in a fun, interactive way! Play GitHub Universe Bingo for a chance to win bragging rights.">
     <meta name="twitter:title" content="GitHub Universe Bingo!">
     <meta name="twitter:url" content="https://www.universebingo.dev/">
 </head>
@@ -95,88 +97,102 @@
     </nav>
     <!-- End of Navigation Bar -->
 
-    <body>
-        <!-- Header Image Section -->
-   
-<div id="imageSection">
-    <img src="static/images/universe_header.webp" alt="Universe header" class="responsive-img"
-        aria-label="Universe header image">
-</div>
-      
+    <!-- Main HTML Structure -->
 
-        <!-- Main Content Container -->
-        <div class="responsive-img">
+    <!-- Header Image Section -->
+    <div id="imageSection">
+        <!-- Universe Header Image -->
+        <img src="static/images/universe_header.webp" alt="Universe header" class="responsive-img" aria-label="Universe header image">
+    </div>
 
-            <!-- Header Section -->
-            <header>
-                <h1 class="my-4 display-4"
-                    style="font-family: 'MonaSans', sans-serif; font-weight: 900; font-stretch: 75%; letter-spacing: -0.01em;">
-                    GitHub Universe Bingo!
+    <!-- Main Content Container -->
+    <div class="responsive-img">
+
+        <!-- Header Section -->
+        <header style="position: relative; max-width: 1100px; margin: 0 auto;">
+            <div class="Primer_Brand__Hero-module__Hero___EM3jf page is-ready" style="max-width: 1150px; margin: 0 auto;">
+                <h1 class="Primer_Brand__Heading-module__Heading___IVpmp" style="display: flex; flex-direction: column; align-items: center;">
+                    <!-- Adding Header Image -->
+                    <img src="/static/images/hero-logo.png" alt="Hero Logo" class="Primer_Brand__Image-module__Image___FgVuK Hero_Hero__logo-letter__Oh8R9 global_letter" style="max-width: 100%;">
+                    <div class="flex-container scale-effect" style="display: flex; justify-content: space-between; max-width: 100%; margin: 0 auto;">
+                        <style>
+                            @media (max-width: 680px) {
+                                .flex-container {
+                                    flex-direction: column;
+                                    align-items: center;
+                                }
+                            }
+                        </style>
+                        <p style="color: #8d949d; flex: 2; text-align: left; max-width: 100%;" class="Primer_Brand__Text-module__Text___pecHN Primer_Brand__Text-module__Text--muted___lTaVa Primer_Brand__Text-module__Text--500___orDRu Primer_Brand__Text-module__Text--weight-semibold___Ns19j Hero_Hero__tagline__ICyNO">
+                            Welcome to Universe 23 Bingo! Where Tech Meets Playful Wins
+                        </p>
+                        <a class="btn btn-primary ml-2 Button--gradient btn-large" href="https://reg.githubuniverse.com/flow/github/universe23/reg/login" aria-label="Get Tickets for Universe 23" style="flex: 1; text-align: center; max-width: 100%;">
+                            Get Tickets
+                        </a>
+                    </div>
                 </h1>
-                <h2 class="mb-4 h5">
-                    <a href="https://githubuniverse.com/" style="color: #ffffff;">California Streaming - November 8-9 2023</a>
-                </h2>
-            </header>
-
-            <!-- Bingo Announcement Section (Initially Hidden) -->
-            <div id="bingo" class="responsive-img">
-                <!-- Bingo Winning Message -->
-                <h1 class="my-4 display-1 text-center">YOU WON!!!</h1>
-                <div class="button-group text-center">
-                    <!-- Action Buttons -->
-                    <a class="btn btn-primary ml-2 Button--gradient" href="" aria-label="Play again">Play Again</a>
-                    <a class="btn btn-primary ml-2 Button--gradient" target="_blank" aria-label="Tweet your win"
-                        href="http://twitter.com/intent/tweet?text=I+got+a+BINGO!&url=https%3A%2F%2Funiversebingo.dev%2F&hashtags=UniverseBingo,WINNER">
-                        Tweet This
-                    </a>
-                </div>
-                <!-- Winning Image -->
-                <div class="image-container text-center">
-                    <img src="static/images/mona_star.png" alt="Mona Star" class="responsive-img">
-                </div>
             </div>
+        </header>
 
-            <!-- Bingo Card Table Section -->
-            <div class="table-responsive">
-                <table id="bingoCard" class="my-4 mx-auto" aria-label="Bingo Card">
-                    <tbody id="playCard"></tbody>
-                </table>
+        <!-- Bingo Announcement Section (Initially Hidden) -->
+        <div id="bingo" class="responsive-img">
+            <!-- Bingo Winning Message -->
+            <h1 class="my-4 display-1 text-center">YOU WON!!!</h1>
+            <!-- Action Buttons -->
+            <div class="button-group text-center">
+                <a class="btn btn-primary ml-2 Button--gradient" href="" aria-label="Play again">Play Again</a>
+                <a class="btn btn-primary ml-2 Button--gradient" target="_blank" aria-label="Tweet your win"
+                    href="http://twitter.com/intent/tweet?text=I+got+a+BINGO!&url=https%3A%2F%2Funiversebingo.dev%2F&hashtags=UniverseBingo,WINNER">
+                    Tweet This
+                </a>
             </div>
-
-            <!-- Footer Section -->
-            <footer class="footer">
-
-                <!-- Footer Action Buttons -->
-                <div class="footer-action-buttons">
-                    <a class="btn btn-primary ml-2 Button--gradient" href="" aria-label="Generate a new bingo card">
-                        New Bingo Card
-                    </a>
-                    <a class="btn btn-primary ml-2 Button--gradient" target="_blank"
-                        aria-label="Tweet about your Bingo game"
-                        href="https://twitter.com/intent/tweet?text=I+am+playing+GitHub+Universe+Keynote+Bingo!&url=https%3A%2F%2Funiversebingo.dev%2F&hashtags=UniverseBingo">
-                        Tweet This
-                    </a><br /><br />
-                </div>
-
-                <!-- Footer Credits (Commented Out for Now) -->
-                <!-- 
-        <p class="mt-4 small">
-            Made with love by
-            <a target="_blank" href="https://twitter.com/ashleymcnamara" style="color: #4ac26b;"
-                aria-label="Ashley's Twitter">@ashleymcnamara</a>
-            and inspired by
-            <a target="_blank" href="https://github.com/keynotebingo/keynotebingo.github.io" style="color: #4ac26b;"
-                aria-label="Keynote Bingo on GitHub">keynotebingo.github.io</a>
-        </p>
-        -->
-            </footer>
+            <!-- Winning Image -->
+            <div class="image-container text-center">
+                <img src="static/images/mona_star.png" alt="Mona Star" class="responsive-img">
+            </div>
         </div>
-        <!-- Image Section -->
-        <div id="imageSection">
-            <img src="static/images/bingo_footer.webp" alt="Universe footer" class="responsive-img"
-                aria-label="Universe footer image">
+    </div>
+    <!-- Bingo Card Table Section -->
+    <div class="table-responsive">
+        <table id="bingoCard" class="my-4 mx-auto" aria-label="Bingo Card">
+            <tbody id="playCard"></tbody>
+        </table>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+
+        <!-- Footer Action Buttons -->
+        <div class="footer-action-buttons">
+            <a class="btn btn-primary ml-2 Button--gradient" href="" aria-label="Generate a new bingo card">
+                New Bingo Card
+            </a>
+            <a class="btn btn-primary ml-2 Button--gradient" target="_blank"
+                aria-label="Tweet about your Bingo game"
+                href="https://twitter.com/intent/tweet?text=I+am+playing+GitHub+Universe+Keynote+Bingo!&url=https%3A%2F%2Funiversebingo.dev%2F&hashtags=UniverseBingo">
+                Tweet This
+            </a><br /><br />
         </div>
 
+        <!-- Footer Credits (Commented Out for Now) -->
+        <!-- 
+    <p class="mt-4 small">
+        Made with love by
+        <a target="_blank" href="https://twitter.com/ashleymcnamara" style="color: #4ac26b;"
+            aria-label="Ashley's Twitter">@ashleymcnamara</a>
+        and inspired by
+        <a target="_blank" href="https://github.com/keynotebingo/keynotebingo.github.io" style="color: #4ac26b;"
+            aria-label="Keynote Bingo on GitHub">keynotebingo.github.io</a>
+    </p>
+    -->
+    </footer>
+    </div>
+    <!-- Image Section -->
+    <div id="imageSection">
+        <img src="static/images/bingo_footer.webp" alt="Universe footer" class="responsive-img"
+            aria-label="Universe footer image">
+    </div>
+</body>
         <script>
             strings = [
                 "GHAS Mention",
