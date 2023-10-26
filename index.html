@@ -21,6 +21,10 @@
     <!-- Favicon -->
     <link rel="icon" href="static/images/favicon.ico" type="image/x-icon">
 
+    <!-- Preload Sounds -->
+    <link rel="preload" as="audio" href="static/sounds/pop.mp3">
+    <link rel="preload" as="audio" href="static/sounds/win.mp3">
+
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q5WE9QHF67"></script>
     <script>
@@ -372,7 +376,7 @@
 
                 // Style the text before and after the colon
                 el_cell.innerHTML = `<span style='font-weight:bold; color:white;'>${prefix || ""}</span>` +
-                    (postfix ? `: <span style='color:#7749cc;'>${postfix}</span>` : "");
+                    (postfix ? `: <span style='color:#4ac26b;'>${postfix}</span>` : "");
 
                 el_cell.addEventListener('click', mark_cell, false);
             }
