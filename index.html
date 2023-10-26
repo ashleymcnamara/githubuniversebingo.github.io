@@ -174,7 +174,7 @@
                 </a>
             </div>
             <!-- Winning Image -->
-            <div class="image-container text-center">
+            <div class="image-container text-center" >
                 <img src="static/images/mona_star.png" alt="Mona Star" class="responsive-img">
             </div>
         </div>
@@ -248,7 +248,7 @@
 </body>
         <script>
             strings = [
-                "GHAS Mention",
+               
                 "Certification Talk",
                 "Custom Model Talk",
                 "LLM Deep Dive",
@@ -332,95 +332,100 @@
             // Main JavaScript code wrapped inside the HTML file
 
             // Function to shuffle an array
-            function shuffle(array) {
-                var currentIndex = array.length;
-                var temporaryValue;
-                var randomIndex;
+                function shuffle(array) {
+                    var currentIndex = array.length;
+                    var temporaryValue;
+                    var randomIndex;
 
-                // Shuffle the array using a while loop
-                while (currentIndex !== 0) {
-                    randomIndex = Math.floor(Math.random() * currentIndex);
-                    currentIndex -= 1;
+                    // Shuffle the array using a while loop
+                    while (currentIndex !== 0) {
+                        randomIndex = Math.floor(Math.random() * currentIndex);
+                        currentIndex -= 1;
 
-                    // Swap elements in the array
-                    temporaryValue = array[currentIndex];
-                    array[currentIndex] = array[randomIndex];
-                    array[randomIndex] = temporaryValue;
+                        // Swap elements in the array
+                        temporaryValue = array[currentIndex];
+                        array[currentIndex] = array[randomIndex];
+                        array[randomIndex] = temporaryValue;
+                    }
+                    return array;
                 }
-                return array;
-            }
 
-            // Shuffle the 'strings' array and store it in 'shuffled_strings'
-            var shuffled_strings = shuffle(strings);
+                // Shuffle the 'strings' array and store it in 'shuffled_strings'
+                var shuffled_strings = shuffle(strings);
 
-            // Initialize and fetch elements from DOM
-            var el_playcard = document.getElementById('playCard');
+                // Initialize and fetch elements from DOM
+                var el_playcard = document.getElementById('playCard');
 
-            // Loop through to create the rows and columns for the Bingo card
-            for (var row = 0; row < 5; row++) {
-                var el_row = el_playcard.insertRow(-1);
+                // Loop through to create the rows and columns for the Bingo card
+                    for (var row = 0; row < 5; row++) {
+                        var el_row = el_playcard.insertRow(-1);
 
-                for (var col = 0; col < 5; col++) {
-                    var el_cell = el_row.insertCell(0);
+                        for (var col = 0; col < 5; col++) {
+                            var el_cell = el_row.insertCell(0);
 
-                    // Check for "Free Space" at the center of the grid
-                    if (row === 2 && col === 2) {
-                        el_cell.innerHTML = 'Free<br /><br /><br /><br />Space';
-                        el_cell.classList.add('marked', 'marked-free');
+                            if (row === 2 && col === 2) {
+                                el_cell.innerHTML = 'Free<br /><br /><br /><br />Space';
+                                el_cell.classList.add('marked', 'marked-free');
+                            } else {
+                                const text = shuffled_strings.pop();
+                                const [prefix, postfix] = text.split(": ");
+
+                                // Style the text before and after the colon
+                                el_cell.innerHTML = `<span style='font-weight:bold; color:white;'>${prefix || ""}</span>` +
+                                    (postfix ? `: <span style='color:#7749cc;'>${postfix}</span>` : "");
+
+                                el_cell.addEventListener('click', mark_cell, false);
+                            }
+                        }
+                    }
+
+                    // Initialize counters and load audio assets
+                    var bingo_counter = 0;
+                    var marked_sound = new Audio('static/sounds/pop.mp3');
+                    var bingo_sound = new Audio('static/sounds/win.mp3');
+
+                marked_sound.load();
+                bingo_sound.load();
+
+                // Initialize counters for rows, columns, and diagonals for Bingo checks
+                var row_count = [0, 0, 1, 0, 0];
+                var col_count = [0, 0, 1, 0, 0];
+                var diag_count = [1, 1];
+
+                // Function to mark a cell and check for Bingo win conditions
+                function mark_cell(cell) {
+                    var rowIndex = cell.srcElement.parentElement.rowIndex;
+                    var colIndex = cell.srcElement.cellIndex;
+
+                    // Update counters based on clicked cell position
+                    row_count[rowIndex]++;
+                    col_count[colIndex]++;
+
+                    // Update diagonal counters if clicked cell is on a diagonal
+                    if (rowIndex === colIndex) diag_count[0]++;
+                    if (rowIndex + colIndex === 4) diag_count[1]++;
+
+                    // Remove click event and mark cell
+                    cell.srcElement.removeEventListener('click', mark_cell);
+                    cell.srcElement.classList.add('marked');
+
+                    // Check for Bingo win conditions
+                    if (row_count.includes(5) || col_count.includes(5) || diag_count.includes(5)) {
+                        document.querySelectorAll('td').forEach(e => e.classList.add('rotate-out'));
+                        bingo_sound.play();
+
+                        // Reveal the 'Play Again' button after animation ends
+                        setTimeout(() => {
+                            var play_again = document.getElementById('bingo');
+                            play_again.classList.add('bounce-in');
+                            play_again.style.display = 'block';
+                        }, 400);
                     } else {
-                        el_cell.innerHTML = shuffled_strings.pop();
-                        el_cell.addEventListener('click', mark_cell, false);
+                        // Play the sound for marking a cell
+                        marked_sound.play();
                     }
                 }
-            }
-
-            // Initialize counters and load audio assets
-            var bingo_counter = 0;
-            var marked_sound = new Audio('static/sounds/pop.mp3');
-            var bingo_sound = new Audio('static/sounds/win.mp3');
-
-            marked_sound.load();
-            bingo_sound.load();
-
-            // Initialize counters for rows, columns, and diagonals for Bingo checks
-            var row_count = [0, 0, 1, 0, 0];
-            var col_count = [0, 0, 1, 0, 0];
-            var diag_count = [1, 1];
-
-            // Function to mark a cell and check for Bingo win conditions
-            function mark_cell(cell) {
-                var rowIndex = cell.srcElement.parentElement.rowIndex;
-                var colIndex = cell.srcElement.cellIndex;
-
-                // Update counters based on clicked cell position
-                row_count[rowIndex]++;
-                col_count[colIndex]++;
-
-                // Update diagonal counters if clicked cell is on a diagonal
-                if (rowIndex === colIndex) diag_count[0]++;
-                if (rowIndex + colIndex === 4) diag_count[1]++;
-
-                // Remove click event and mark cell
-                cell.srcElement.removeEventListener('click', mark_cell);
-                cell.srcElement.classList.add('marked');
-
-                // Check for Bingo win conditions
-                if (row_count.includes(5) || col_count.includes(5) || diag_count.includes(5)) {
-                    document.querySelectorAll('td').forEach(e => e.classList.add('rotate-out'));
-                    bingo_sound.play();
-
-                    // Reveal the 'Play Again' button after animation ends
-                    setTimeout(() => {
-                        var play_again = document.getElementById('bingo');
-                        play_again.classList.add('bounce-in');
-                        play_again.style.display = 'block';
-                    }, 400);
-                } else {
-                    // Play the sound for marking a cell
-                    marked_sound.play();
-                }
-            }
-        </script>
-    </body>
-
-</html>
+            </script>
+        </body>
+        
+        </html>
