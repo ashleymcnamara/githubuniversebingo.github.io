@@ -3,5 +3,5 @@
     "image": "node:14",
     "forwardPorts": [8080],
     "postCreateCommand": "npx http-server -p 8080 ./",
-    "extensions": []
+    "extensions": ["github.copilot", "github.copilot-chat"]
 }
