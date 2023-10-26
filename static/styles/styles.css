@@ -6910,7 +6910,7 @@ table#bingoCard td.marked {
     text-shadow: #ccc 0px 0px 2px;
     border: 1px solid #8250df;
     background-color: #6d43bd;
-    transition: background-color 1s ease-in
+    transition: all 0.5s;
 }
 
 table#bingoCard td.marked-free {
