@@ -272,36 +272,73 @@ svg {
     height: auto;
 }
 
-/* Prevent the "Menu" text from turning purple when hovered */
-.nav-link.dropdown-toggle:hover {
+.header-navbar .nav-link.dropdown-toggle:hover {
     background-color: transparent !important;
     color: white !important;
 }
 
-/* Ensure menu text is white */
-.nav-link {
+.header-navbar .nav-link {
     color: white !important;
 }
 
-/* Change the background to purple on hover, while keeping the text white */
-.nav-link:hover {
+.header-navbar .nav-link:hover {
     background-color: #7d51df !important;
-    /* Specific purple color */
     color: white !important;
 }
 
-/* For dropdown items */
-.dropdown-item {
+.header-navbar .dropdown-item {
     color: white !important;
 }
 
-
-/* Change the background to purple on hover for dropdown items only, while keeping the text white */
-.dropdown-item:hover {
+.header-navbar .dropdown-item:hover {
     background-color: #7d51df !important;
-    /* Specific purple color */
     color: white !important;
 }
+
+/* General styles */
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style the navbar */
+.footer-navbar {
+    justify-content: flex-end !important;
+}
+
+.footer-navbar .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.footer-navbar .nav-item {
+    margin-left: 20px;
+}
+
+.footer-navbar .nav-link {
+    font-family: 'Monasans', sans-serif;
+    color: #8c949f !important;
+}
+
+.footer-navbar .nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .footer-navbar .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 10px;
+    }
+
+    .footer-navbar .nav-item {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+
 
 table {
     border-collapse: collapse
@@ -6837,6 +6874,36 @@ table#bingoCard td {
         font-size: 0.8em
     }
 }
+
+/* To prevent conflict, I've added a custom class */
+.navbar-custom {
+    background-color: #000;  /* Dark background */
+}
+
+.navbar-custom .navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar-custom .nav-item {
+    margin: 10px;
+}
+
+.navbar-custom .nav-link {
+    color: #8c949f;  /* Your desired color */
+    text-decoration: none;
+    padding: 8px 16px;
+    display: inline-block;
+}
+
+.navbar-custom .nav-link:hover {
+    background-color: #333;  /* On hover background */
+    color: #fff;  /* On hover text color */
+}
+
 
 table#bingoCard td.marked {
     color: white;
