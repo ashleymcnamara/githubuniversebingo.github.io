@@ -119,7 +119,6 @@ for (var row = 0; row < 5; row++) {
             // Style the text before and after the colon
             el_cell.innerHTML = `<span style='font-weight:bold; color:white;'>${prefix || ""}</span>` +
                 (postfix ? `: <span style='color:#4ac26b;'>${postfix}</span>` : "");
-
             el_cell.addEventListener('click', handle_cell_click, false);
         }
     }
@@ -193,6 +192,11 @@ function handle_cell_click(event) {
             var play_again = document.getElementById('bingo');
             play_again.classList.add('bounce-in');
             play_again.style.display = 'block';
+            //scroll to the top of the "bingo" block
+            window.scrollTo({
+                top: play_again.offsetTop,
+                behavior: "smooth"
+            });
         }, 400);
     }
 }
