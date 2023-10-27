@@ -95,7 +95,18 @@ function shuffle(array) {
     return array;
 }
 
-var card_titles_shuffled = shuffle(card_titles);
+var card_titles_shuffled = null;
+
+// Retrieve shuffled cards from LocalStorage
+var card_titles_shuffled_json = localStorage.getItem('card_titles_shuffled');
+if(card_titles_shuffled_json) {
+    card_titles_shuffled = JSON.parse(card_titles_shuffled_json);
+} else {
+    // Shuffle the 'card_titles' array and store it in 'card_titles_shuffled'
+    card_titles_shuffled = shuffle(card_titles);
+    // Store the shuffled cards in LocalStorage
+    localStorage.setItem('card_titles_shuffled', JSON.stringify(card_titles_shuffled));
+}
 
 // Initialize and fetch elements from DOM
 var el_playcard = document.getElementById('playCard');
@@ -105,6 +116,8 @@ for (var row = 0; row < 5; row++) {
     var el_row = el_playcard.insertRow(-1);
     for (var col = 0; col < 5; col++) {
         var el_cell = el_row.insertCell(0);
+        // set the el_cell id to the row and column
+        el_cell.id = `cell-${row}-${col}`;
         if (row === 2 && col === 2) {
             el_cell.innerHTML = '<span class="freeWrap">Free<br/><br/><br/><br/><br/>Space</span>';
             el_cell.classList.add('marked', 'marked-free');
@@ -117,6 +130,27 @@ for (var row = 0; row < 5; row++) {
             el_cell.addEventListener('click', handle_cell_click, false);
         }
     }
+}
+
+
+// Retrieve which cards are "marked" from LocalStorage
+var marked_cells_json = localStorage.getItem('marked_cells');
+if (marked_cells_json) {
+    marked_cells = JSON.parse(marked_cells_json)
+    marked_cells.forEach(function (cell) {
+        var el_cell = document.getElementById(cell);
+        el_cell.classList.add('marked');
+    });
+}
+
+// Function to store which cards are "marked" in LocalStorage
+function store_marked_cells() {
+    var marked_cells = document.querySelectorAll('.marked');
+    var marked_cells_array = [];
+    marked_cells.forEach(function (cell) {
+        marked_cells_array.push(cell.id);
+    });
+    localStorage.setItem('marked_cells', JSON.stringify(marked_cells_array));
 }
 
 var bingo_counter = 0;
@@ -182,10 +216,14 @@ function handle_cell_click(event) {
     if (cell.classList.contains('marked')) {
         marked_sound.play();
     }
+    // Store marked cells in LocalStorage
+    store_marked_cells();
     // check for Bingo win condition
     if (is_bingo()) {
         document.querySelectorAll('td').forEach(e => e.classList.add('rotate-out'));
         bingo_sound.play();
+        // Clear local storage so they don't play the same game again
+        localStorage.clear();
         // Reveal the 'Play Again' button after animation ends
         setTimeout(() => {
             var play_again = document.getElementById('bingo');
@@ -205,4 +243,11 @@ document.querySelectorAll('#playCard td').forEach(cell => {
     if (!cell.classList.contains('marked-free')) {
         cell.addEventListener('click', handle_cell_click);
     }
+});
+
+// clear localStorage when newBingoCard clicked
+document.getElementById('newBingoCard').addEventListener('click', function () {
+    // Clear the LocalStorage and reload the page
+    localStorage.clear();
+    location.reload();
 });
