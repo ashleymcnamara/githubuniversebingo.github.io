@@ -303,7 +303,7 @@ svg {
 
 /* Style the navbar */
 .footer-navbar {
-    justify-content: flex-end !important;
+    justify-content: center !important;
 }
 
 .footer-navbar .navbar-nav {
@@ -335,8 +335,13 @@ svg {
 
     .footer-navbar .nav-item {
         margin-left: 0;
-        margin-bottom: 10px;
+        margin-bottom: 0px;
     }
+
+    .footer-navbar .nav-link {
+        padding: 0px;
+    }
+    
 }
 
 
@@ -6859,9 +6864,10 @@ table#bingoCard {
 }
 
 table#bingoCard td {
+    width: 100%;
     padding: 10px;
     text-align: center;
-    width: 20%;
+    width: 18%;
     min-width: 128px;
     height: 128px;
     cursor: pointer;
@@ -6871,7 +6877,39 @@ table#bingoCard td {
 
 @media (max-width: 991.98px) {
     table#bingoCard td {
-        font-size: 0.8em
+        font-size: 0.8em;
+        min-width: 96px;
+        height: 96px;
+    }
+}
+
+@media (max-width: 600px) {
+    table#bingoCard td {
+        font-size: 0.6em;
+        min-width: 64px;
+        height: 64px;
+    }
+}
+
+@media (max-width: 500px) {
+    table#bingoCard td {
+        font-size: 0.5em;
+        min-width: 48px;
+        height: 48px;
+    }
+    .freeWrap {
+        display: none;
+    }
+}
+
+@media (max-width: 390px) {
+    table#bingoCard td {
+        font-size: 0.35em;
+        min-width: 36px;
+        height: 36px;
+    }
+    .freeWrap {
+        display: none;
     }
 }
 
@@ -6917,7 +6955,21 @@ table#bingoCard td.marked-free {
     background-image: url("../images/github-logo-white.png");
     background-size: 60px 60px;
     background-repeat: no-repeat;
-    background-position: center center
+    background-position: center center;
+}
+
+.freeTop {
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.freeBottom {
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .responsive-img {
@@ -7020,4 +7072,12 @@ a {
     animation-name: rotate-out;
     animation-fill-mode: both;
     animation-duration: 1s
+}
+
+.navbar-toggler {
+    display: none !important;
+}
+
+.navbar-collapse {
+    display: block !important;
 }
