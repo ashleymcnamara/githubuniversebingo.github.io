@@ -3,7 +3,7 @@ var card_titles = [
     "Patagonia Vest Sighting: Because tech conferences are a prime opportunity to showcase your fashion-forward Patagonia vest.",
     "Dr. Who Quotes: Casual references to classic Dr. Who episodes from the 1970s, sparking the nostalgia of fellow fans.",
     "Size 10 Font Slide: When a presenter uses an impossibly small font on a PowerPoint slide, forcing everyone to squint and lean in.",
-    "Wi-Fi Woes: When the dreaded announcement comes that the conference Wi-Fi has gone down, and panic ensues.",
+    "Wi-Fi Woes: That instant the conference Wi-Fi flops and we're all back to the Stone Age, chiseling tweets on cave walls.",
     "Scaling Success Stories: When large enterprises share their experiences of scaling their development efforts using GitHub.",
     "Workflow Woes: When someone shares a challenging experience in setting up complex workflows with GitHub Actions.",
     "AI in Cybersecurity: When AI's role in enhancing security protocols gets its 15 seconds of fame.",
