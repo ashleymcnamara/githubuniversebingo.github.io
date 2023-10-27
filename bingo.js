@@ -55,7 +55,7 @@ var card_titles = [
     "Dad Joke from a Keynote Speaker: Mandatory humor? Check.",
     "Misuse of the Term AI: Because everything is AI now, didn't you know?",
     "Merge Conflict Joke: It's all fun and games until someone has to manually resolve conflicts.",
-    "Darkmode Debate: The eternal struggle: light vs. dark. Choose your allegiance.",
+    "Darkmode Debate: The eternal struggle of light vs. dark. Choose your allegiance.",
     "Repository Roulette: When the speaker can't remember which branch they need and goes on a clicking spree through their GitHub repository.",
     "Gist Gaffes: When a speaker tries to paste a code snippet from a Gist but accidentally reveals their collection of recipes or meme GIFs.",
     "'It Worked on My Machine' Admission: When the presenter encounters an issue and blames the classic 'It worked on my machine' as the crowd chuckles.",
