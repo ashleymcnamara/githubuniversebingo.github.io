@@ -6958,12 +6958,6 @@ table#bingoCard td.marked-free {
     background-position: center center;
 }
 
-.freeWrap {
-    position: relative;
-    height: 100%;
-    width: 100%;
-}
-
 .freeTop {
     position: absolute;
     top: -60px;

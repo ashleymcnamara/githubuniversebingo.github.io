@@ -78,21 +78,16 @@ var card_titles = [
     "Code Scanning Celebrated: A shoutout to GitHub's code scanning feature, making security an integral part of the development process."
 ];
 
-//TESTING ONLY - append some text to each card title
-card_titles = card_titles.map(title => title + ": Here is a subtitle example text so we can see how it looks");
-
 // Function to shuffle an array
 function shuffle(array) {
     var currentIndex = array.length;
     var temporaryValue;
     var randomIndex;
-
-// Shuffle the array using a while loop
+    // Shuffle the array using a while loop
     while (currentIndex !== 0) {
         randomIndex = Math.floor(Math.random() * currentIndex);
         currentIndex -= 1;
-
-// Swap elements in the array
+    // Swap elements in the array
         temporaryValue = array[currentIndex];
         array[currentIndex] = array[randomIndex];
         array[randomIndex] = temporaryValue;
@@ -100,7 +95,6 @@ function shuffle(array) {
     return array;
 }
 
-// Shuffle the 'card_titles' array and store it in 'card_titles_shuffled'
 var card_titles_shuffled = shuffle(card_titles);
 
 // Initialize and fetch elements from DOM
@@ -112,7 +106,7 @@ for (var row = 0; row < 5; row++) {
     for (var col = 0; col < 5; col++) {
         var el_cell = el_row.insertCell(0);
         if (row === 2 && col === 2) {
-            el_cell.innerHTML = '<span class="freeWrap"><span class="freeTop">Free</span><span class="freeBottom">Space</span></span>';
+            el_cell.innerHTML = '<span class="freeWrap">Free<br/><br/><br/><br/><br/>Space</span>';
             el_cell.classList.add('marked', 'marked-free');
         } else {
             const text = card_titles_shuffled.pop();
