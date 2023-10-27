@@ -6864,6 +6864,7 @@ table#bingoCard {
 }
 
 table#bingoCard td {
+    width: 100%;
     padding: 10px;
     text-align: center;
     width: 18%;
@@ -6889,11 +6890,23 @@ table#bingoCard td {
         height: 64px;
     }
 }
-@media (max-width: 400px) {
+
+@media (max-width: 500px) {
     table#bingoCard td {
-        font-size: 0.4em;
-        min-width: 40px;
-        height: 40px;
+        font-size: 0.5em;
+        min-width: 48px;
+        height: 48px;
+    }
+    .freeWrap {
+        display: none;
+    }
+}
+
+@media (max-width: 390px) {
+    table#bingoCard td {
+        font-size: 0.35em;
+        min-width: 36px;
+        height: 36px;
     }
     .freeWrap {
         display: none;
