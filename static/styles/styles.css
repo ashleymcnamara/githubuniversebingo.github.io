@@ -303,7 +303,7 @@ svg {
 
 /* Style the navbar */
 .footer-navbar {
-    justify-content: flex-end !important;
+    justify-content: center !important;
 }
 
 .footer-navbar .navbar-nav {
@@ -335,8 +335,13 @@ svg {
 
     .footer-navbar .nav-item {
         margin-left: 0;
-        margin-bottom: 10px;
+        margin-bottom: 0px;
     }
+
+    .footer-navbar .nav-link {
+        padding: 0px;
+    }
+    
 }
 
 
