@@ -6940,6 +6940,22 @@ table#bingoCard td.marked-free div {
     color: white !important;
 }
 
+.card_prefix {
+    display: block;
+    font-weight: bold;
+    color: white;
+    line-height: 1.1em;
+}
+
+.card_postfix {
+    display: block;
+    padding-top: 0.4em;
+    font-weight: normal;
+    font-size-adjust: 0.5;
+    line-height: 1.1em;
+    color: lightgray;
+}
+
 .custom-primary {
     border-color: #046bde !important;
     color: #046bde !important;

@@ -80,6 +80,9 @@ var card_titles = [
     "CLI Mastery"
 ];
 
+//TESTING ONLY - append some text to each card title
+card_titles = card_titles.map(title => title + ": Here is a subtitle example text so we can see how it looks");
+
 // Function to shuffle an array
 function shuffle(array) {
     var currentIndex = array.length;
@@ -117,8 +120,8 @@ for (var row = 0; row < 5; row++) {
             const text = card_titles_shuffled.pop();
             const [prefix, postfix] = text.split(": ");
             // Style the text before and after the colon
-            el_cell.innerHTML = `<span style='font-weight:bold; color:white;'>${prefix || ""}</span>` +
-                (postfix ? `: <span style='color:#4ac26b;'>${postfix}</span>` : "");
+            el_cell.innerHTML = `<span class='card_prefix'>${prefix || ""}</span>` +
+                (postfix ? `<span class='card_postfix'>${postfix}</span>` : "");
             el_cell.addEventListener('click', handle_cell_click, false);
         }
     }
