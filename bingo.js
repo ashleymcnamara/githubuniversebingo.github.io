@@ -1,4 +1,4 @@
-var strings = [
+var card_titles = [
     "Certification Talk",
     "Custom Model Talk",
     "LLM Deep Dive",
@@ -99,30 +99,28 @@ function shuffle(array) {
     return array;
 }
 
-// Shuffle the 'strings' array and store it in 'shuffled_strings'
-var shuffled_strings = shuffle(strings);
+// Shuffle the 'card_titles' array and store it in 'card_titles_shuffled'
+var card_titles_shuffled = shuffle(card_titles);
 
 // Initialize and fetch elements from DOM
 var el_playcard = document.getElementById('playCard');
 
-// Loop through to create the rows and columns for the Bingo card
+// Create the rows and columns for the Bingo card
 for (var row = 0; row < 5; row++) {
     var el_row = el_playcard.insertRow(-1);
-
     for (var col = 0; col < 5; col++) {
         var el_cell = el_row.insertCell(0);
-
         if (row === 2 && col === 2) {
             el_cell.innerHTML = 'Free<br /><br /><br /><br />Space';
             el_cell.classList.add('marked', 'marked-free');
         } else {
-            const text = shuffled_strings.pop();
+            const text = card_titles_shuffled.pop();
             const [prefix, postfix] = text.split(": ");
             // Style the text before and after the colon
             el_cell.innerHTML = `<span style='font-weight:bold; color:white;'>${prefix || ""}</span>` +
                 (postfix ? `: <span style='color:#4ac26b;'>${postfix}</span>` : "");
 
-            el_cell.addEventListener('click', mark_cell, false);
+            el_cell.addEventListener('click', handle_cell_click, false);
         }
     }
 }
@@ -134,36 +132,60 @@ var bingo_sound = new Audio('static/sounds/win.mp3');
 marked_sound.load();
 bingo_sound.load();
 
-// Initialize counters for rows, columns, and diagonals for Bingo checks
-var row_count = [0, 0, 1, 0, 0];
-var col_count = [0, 0, 1, 0, 0];
-var diag_count = [1, 1];
-
-// Function to mark or unmark a cell and check for Bingo win conditions
-function mark_cell(event) {
-    var cell = event.srcElement;
-    var rowIndex = cell.parentElement.rowIndex;
-    var colIndex = cell.cellIndex;
-
-// If cell is already marked, unmark it and decrement counters
-    if (cell.classList.contains('marked')) {
-        cell.classList.remove('marked');
-        row_count[rowIndex]--;
-        col_count[colIndex]--;
-        if (rowIndex === colIndex) diag_count[0]--;
-        if (rowIndex + colIndex === 4) diag_count[1]--;
-        return;
+// check if Bingo win condition is met
+function is_bingo() {
+    var bingo = false;
+    var marked_cells = document.querySelectorAll('.marked');
+    var marked_rows = [];
+    var marked_cols = [];
+    var marked_diag1 = [];
+    var marked_diag2 = [];
+    // loop through all marked cells and store their row and column
+    marked_cells.forEach(function (cell) {
+        marked_rows.push(cell.parentElement.rowIndex);
+        marked_cols.push(cell.cellIndex);
+        // check if cell is in right diagonal
+        if (cell.parentElement.rowIndex === cell.cellIndex) {
+            marked_diag1.push(true);
+        }
+        // check if cell is in left diagonal
+        if (cell.parentElement.rowIndex + cell.cellIndex === 4) {
+            marked_diag2.push(true);
+        }
+    });
+    // check if any row has 5 marked cells
+    for (var i = 0; i < 5; i++) {
+        if (marked_rows.filter(x => x === i).length === 5) {
+            bingo = true;
+        }
     }
+    // check if any column has 5 marked cells
+    for (var j = 0; j < 5; j++) {
+        if (marked_cols.filter(x => x === j).length === 5) {
+            bingo = true;
+        }
+    }
+    // check if diagonal 1 has 5 marked cells
+    if (marked_diag1.length === 5) {
+        bingo = true;
+    }
+    // check if diagonal 2 has 5 marked cells
+    if (marked_diag2.length === 5) {
+        bingo = true;
+    }
+    return bingo;
+}
 
-// Else mark the cell and update counters
-    cell.classList.add('marked');
-    row_count[rowIndex]++;
-    col_count[colIndex]++;
-    if (rowIndex === colIndex) diag_count[0]++;
-    if (rowIndex + colIndex === 4) diag_count[1]++;
-
-// Check for Bingo win conditions
-    if (row_count.includes(5) || col_count.includes(5) || diag_count.includes(5)) {
+// Handle click event on a cell
+function handle_cell_click(event) {
+    var cell = event.srcElement;
+    // Mark/unmark the cell, play marking sound
+    cell.classList.toggle('marked');
+    if (cell.classList.contains('marked')) {
+        marked_sound.play();
+    }
+    // check for Bingo win condition
+    if (is_bingo()) {
         document.querySelectorAll('td').forEach(e => e.classList.add('rotate-out'));
         bingo_sound.play();
         // Reveal the 'Play Again' button after animation ends
@@ -172,13 +194,12 @@ function mark_cell(event) {
             play_again.classList.add('bounce-in');
             play_again.style.display = 'block';
         }, 400);
-    } else {
-        // Play the sound for marking a cell
-        marked_sound.play();
     }
 }
 
-// Attach click event to cells
+// Attach click event to all except center cell
 document.querySelectorAll('#playCard td').forEach(cell => {
-    cell.addEventListener('click', mark_cell);
+    if (!cell.classList.contains('marked-free')) {
+        cell.addEventListener('click', handle_cell_click);
+    }
 });
