@@ -7079,3 +7079,11 @@ a {
     animation-fill-mode: both;
     animation-duration: 1s
 }
+
+.navbar-toggler {
+    display: none !important;
+}
+
+.navbar-collapse {
+    display: block !important;
+}
