@@ -1,4 +1,4 @@
-strings = [
+var strings = [
     "Certification Talk",
     "Custom Model Talk",
     "LLM Deep Dive",
@@ -78,26 +78,25 @@ strings = [
     "Scanning Success",
     "Issues Insight",
     "CLI Mastery"
-]
-// Main JavaScript code wrapped inside the HTML file
+];
 
 // Function to shuffle an array
 function shuffle(array) {
-var currentIndex = array.length;
-var temporaryValue;
-var randomIndex;
+    var currentIndex = array.length;
+    var temporaryValue;
+    var randomIndex;
 
 // Shuffle the array using a while loop
-while (currentIndex !== 0) {
-randomIndex = Math.floor(Math.random() * currentIndex);
-currentIndex -= 1;
+    while (currentIndex !== 0) {
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
 
 // Swap elements in the array
-temporaryValue = array[currentIndex];
-array[currentIndex] = array[randomIndex];
-array[randomIndex] = temporaryValue;
-}
-return array;
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+    }
+    return array;
 }
 
 // Shuffle the 'strings' array and store it in 'shuffled_strings'
@@ -108,25 +107,24 @@ var el_playcard = document.getElementById('playCard');
 
 // Loop through to create the rows and columns for the Bingo card
 for (var row = 0; row < 5; row++) {
-var el_row = el_playcard.insertRow(-1);
+    var el_row = el_playcard.insertRow(-1);
 
-for (var col = 0; col < 5; col++) {
-var el_cell = el_row.insertCell(0);
+    for (var col = 0; col < 5; col++) {
+        var el_cell = el_row.insertCell(0);
 
-if (row === 2 && col === 2) {
-    el_cell.innerHTML = 'Free<br /><br /><br /><br />Space';
-    el_cell.classList.add('marked', 'marked-free');
-} else {
-    const text = shuffled_strings.pop();
-    const [prefix, postfix] = text.split(": ");
+        if (row === 2 && col === 2) {
+            el_cell.innerHTML = 'Free<br /><br /><br /><br />Space';
+            el_cell.classList.add('marked', 'marked-free');
+        } else {
+            const text = shuffled_strings.pop();
+            const [prefix, postfix] = text.split(": ");
+            // Style the text before and after the colon
+            el_cell.innerHTML = `<span style='font-weight:bold; color:white;'>${prefix || ""}</span>` +
+                (postfix ? `: <span style='color:#4ac26b;'>${postfix}</span>` : "");
 
-    // Style the text before and after the colon
-    el_cell.innerHTML = `<span style='font-weight:bold; color:white;'>${prefix || ""}</span>` +
-        (postfix ? `: <span style='color:#4ac26b;'>${postfix}</span>` : "");
-
-    el_cell.addEventListener('click', mark_cell, false);
-}
-}
+            el_cell.addEventListener('click', mark_cell, false);
+        }
+    }
 }
 
 var bingo_counter = 0;
@@ -143,44 +141,44 @@ var diag_count = [1, 1];
 
 // Function to mark or unmark a cell and check for Bingo win conditions
 function mark_cell(event) {
-var cell = event.srcElement;
-var rowIndex = cell.parentElement.rowIndex;
-var colIndex = cell.cellIndex;
+    var cell = event.srcElement;
+    var rowIndex = cell.parentElement.rowIndex;
+    var colIndex = cell.cellIndex;
 
 // If cell is already marked, unmark it and decrement counters
-if (cell.classList.contains('marked')) {
-cell.classList.remove('marked');
-row_count[rowIndex]--;
-col_count[colIndex]--;
-if (rowIndex === colIndex) diag_count[0]--;
-if (rowIndex + colIndex === 4) diag_count[1]--;
-return;
-}
+    if (cell.classList.contains('marked')) {
+        cell.classList.remove('marked');
+        row_count[rowIndex]--;
+        col_count[colIndex]--;
+        if (rowIndex === colIndex) diag_count[0]--;
+        if (rowIndex + colIndex === 4) diag_count[1]--;
+        return;
+    }
 
 // Else mark the cell and update counters
-cell.classList.add('marked');
-row_count[rowIndex]++;
-col_count[colIndex]++;
-if (rowIndex === colIndex) diag_count[0]++;
-if (rowIndex + colIndex === 4) diag_count[1]++;
+    cell.classList.add('marked');
+    row_count[rowIndex]++;
+    col_count[colIndex]++;
+    if (rowIndex === colIndex) diag_count[0]++;
+    if (rowIndex + colIndex === 4) diag_count[1]++;
 
 // Check for Bingo win conditions
-if (row_count.includes(5) || col_count.includes(5) || diag_count.includes(5)) {
-document.querySelectorAll('td').forEach(e => e.classList.add('rotate-out'));
-bingo_sound.play();
-// Reveal the 'Play Again' button after animation ends
-setTimeout(() => {
-    var play_again = document.getElementById('bingo');
-    play_again.classList.add('bounce-in');
-    play_again.style.display = 'block';
-}, 400);
-} else {
-// Play the sound for marking a cell
-marked_sound.play();
-}
+    if (row_count.includes(5) || col_count.includes(5) || diag_count.includes(5)) {
+        document.querySelectorAll('td').forEach(e => e.classList.add('rotate-out'));
+        bingo_sound.play();
+        // Reveal the 'Play Again' button after animation ends
+        setTimeout(() => {
+            var play_again = document.getElementById('bingo');
+            play_again.classList.add('bounce-in');
+            play_again.style.display = 'block';
+        }, 400);
+    } else {
+        // Play the sound for marking a cell
+        marked_sound.play();
+    }
 }
 
 // Attach click event to cells
 document.querySelectorAll('#playCard td').forEach(cell => {
-cell.addEventListener('click', mark_cell);
+    cell.addEventListener('click', mark_cell);
 });
