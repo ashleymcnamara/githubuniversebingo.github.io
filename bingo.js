@@ -178,6 +178,10 @@ function is_bingo() {
 // Handle click event on a cell
 function handle_cell_click(event) {
     var cell = event.srcElement;
+    //if the element is a span, get its parent
+    if (cell.tagName === 'SPAN') {
+        cell = cell.parentElement;
+    }
     // Mark/unmark the cell, play marking sound
     cell.classList.toggle('marked');
     if (cell.classList.contains('marked')) {
