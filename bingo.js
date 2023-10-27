@@ -112,7 +112,7 @@ for (var row = 0; row < 5; row++) {
     for (var col = 0; col < 5; col++) {
         var el_cell = el_row.insertCell(0);
         if (row === 2 && col === 2) {
-            el_cell.innerHTML = 'Free<br /><br /><br /><br />Space';
+            el_cell.innerHTML = '<span class="freeWrap"><span class="freeTop">Free</span><span class="freeBottom">Space</span></span>';
             el_cell.classList.add('marked', 'marked-free');
         } else {
             const text = card_titles_shuffled.pop();
