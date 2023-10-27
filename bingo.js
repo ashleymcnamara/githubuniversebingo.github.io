@@ -72,7 +72,6 @@ var card_titles = [
     "Heartwarming Highlights: Moments that remind us why we do what we do.",
     "Accessibility for All mention: You'll hear this one a lot as it's near to our hearts",
     "#GitHubUniverse Mention: Are we also using this to subtly mention our hashtag? Yes, yes we are",
-    "Git Puns for the Win: Our commitment to comic relief.",
     "Cybersecurity Spotlight: The kale of tech talks—important and fortified.",
     "DevEx Metrics Mention: The moment we switch from discussing code to discussing how we quantify its quality and user satisfaction.",
     "Stars' Community Impact: A segment or slide highlighting the tangible community impact made by GitHub Stars.",
