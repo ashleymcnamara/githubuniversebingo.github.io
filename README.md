@@ -20,7 +20,7 @@ GitHub Universe Bingo is a delightful twist on the traditional bingo game, speci
 
 ## What's on the Bingo Card?
 
-Expect a mix of tech, humor, and the peculiarities of tech conferences. From *"Awkward High-Five Attempt"* to *"Wi-Fi Woes,"* our squares cover the full spectrum of conference experiences. Plus, we've thrown in some GitHub-themed squares for good measure.
+Expect a mix of tech, humor, and the peculiarities of tech conferences. From *"Legacy Code Lament"* to *"Wi-Fi Woes,"* our squares cover the full spectrum of conference experiences. Plus, we've thrown in some GitHub-themed squares for good measure.
 
 ## Disclaimer
 
