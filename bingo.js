@@ -43,7 +43,6 @@ var card_titles = [
     "Dependabot Diva: When Dependabot updates show up during a live demo, and the speaker treats it like a VIP appearance.",
     "Pull Request Prayers: When a speaker submits a pull request live and openly prays for no merge conflicts.",
     "GitHub Pages Puzzles: When the speaker tries to show off their GitHub Pages website live, only to find it's still building.",
-    "Unintended Tab Sharing: That moment of panic when the speaker realizes they've been sharing their entire screen, revealing tabs like 'How to give a great presentation.'",
     "Bow Tie in the Wild: When you spot a conference-goer rocking a bow tie, proving that tech and style can go hand in hand.",
     "Accessibility Advocacy: Everyone deserves to have the opportunity to create, innovate, and collaborate while contributing to our digital future!",
     "Stars Program Shoutout: When someone specifically mentions the GitHub Stars Program, reminding everyone there's an elite squad among us.",
