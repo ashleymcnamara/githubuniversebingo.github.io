@@ -31,4 +31,4 @@ So gear up for an adventure filled with chuckles and perhaps a new insight or tw
 Best of luck, and may the squares be ever in your favor!
 
 
-![Screenshot](https://github.com/ashleymcnamara/keynotebingo.github.io/blob/master/static/images/bingo_card.png)
+
