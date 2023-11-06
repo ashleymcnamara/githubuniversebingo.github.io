@@ -4,7 +4,7 @@ Welcome to GitHub Universe Bingo, the playful and engaging way to experience [Gi
 
 ## Our Muse
 
-We owe a hat tip to [Keynote Bingo](https://github.com/keynotebingo/keynotebingo.github.io) for sparking the idea behind this engaging endeavor. Their innovative approach to conference engagement is nothing short of brilliant, and we've infused that same spirit into our GitHub Universe experience. Kudos to their creative minds!
+We owe a hat tip to [Universe Bingo](https://github.com/keynotebingo/keynotebingo.github.io) for sparking the idea behind this engaging endeavor. Their innovative approach to conference engagement is nothing short of brilliant, and we've infused that same spirit into our GitHub Universe experience. Kudos to their creative minds!
 
 ## Embracing GitHub Universe Bingo
 
