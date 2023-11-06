@@ -91,7 +91,6 @@ var card_titles = [
     "Scaling Saga: When we share epic tales of growing from startup to tech titan without losing our coding soul.", 
     "UX/UI Unveiling: The magical moment when a seamless user experience is revealed, a testament to the meticulous craft of designers and developers.", 
     "Tech Education Enthusiasm: Encouragement for continuous learning and growth in the ever-changing landscape of technology.",
-
     "Code Scanning Celebrated: A shoutout to GitHub's code scanning feature, making security an integral part of the development process."
 ];
 
