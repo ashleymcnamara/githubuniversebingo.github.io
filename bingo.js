@@ -5,7 +5,6 @@ var card_titles = [
     "Scaling Success Stories: When large enterprises share their experiences of scaling their development efforts using GitHub.",
     "Workflow Woes: When someone shares a challenging experience in setting up complex workflows with GitHub Actions.",
     "Open Source Anecdote: When a speaker shares a personal story about how an open source project dramatically improved their life or workflow.",
-    "Live Coding Courage: Hats off to the brave soul who live codes during a keynote, tempting the demo gods.",
     "DevEx, Not Just UX: A pointed reminder that user experience doesn't stop at the end-user; developers are users too.",
     "DevEx Delight: When a new feature is announced solely to make a developer's life easier, and you can almost hear the collective sigh of relief.",
     "Community Contributions: The shout-out to devs whose pull requests are the unsung heroes of the codebase.",
@@ -38,7 +37,6 @@ var card_titles = [
     "Darkmode Debate: The eternal struggle of light vs. dark. Choose your allegiance.",
     "Dependabot Diva: When Dependabot updates show up during a live demo, and the speaker treats it like a VIP appearance.",
     "Pull Request Prayers: When a speaker submits a pull request live and openly prays for no merge conflicts.",
-    "GitHub Pages Puzzles: When the speaker tries to show off their GitHub Pages website live, only to find it's still building.",
     "Bow Tie in the Wild: When you spot a conference-goer rocking a bow tie, proving that tech and style can go hand in hand.",
     "Accessibility Advocacy: Everyone deserves to have the opportunity to create, innovate, and collaborate while contributing to our digital future!",
     "Stars Program Shoutout: When someone specifically mentions the GitHub Stars Program, reminding everyone there's an elite squad among us.",
@@ -78,6 +76,22 @@ var card_titles = [
     "GitHub Universe Newbie: When someone admits it's their first GitHub Universe, and we all remember our first time.",
     "Git Blame Game: When the talk references the git blame command, and everyone chuckles nervously, wondering what secrets could be unearthed in their codebase.",
     "License to Thrill: Any talk that dives into the complex but essential world of software licenses, reminding us that law and code are not mutually exclusive.",
+    "Cross-Platform Praise: A moment dedicated to technologies that let us write once and run anywhere.",
+    "Pair Programming Plaudits: Because two heads are often better than one, especially in coding.",
+    "MLOps Mention: A nod to the ever-growing intersection of machine learning and operations.",
+    "Code Review Rituals: Exploring the ceremonies and quirks that teams have around code reviews.", 
+    "Hands-on Labs Highlight: Because sometimes the best way to learn is by doing.", 
+    "Quantum Computing Quandary: When we're left contemplating the possibilities of a quantum future.", 
+    "Iteration Inspiration: When we celebrate the small, steady steps that lead to massive innovations.", 
+    "Inclusive Integration Insights: Discussing the tools and techniques that make tech accessible to a diverse range of developers.", 
+    "Command Line Chronicles: Tales from the trenches of terminal use, where every keystroke tells a story.", 
+    "Hybrid Cloud Hype: When the conversation shifts to the seamless blend of private and public clouds and the freedom it offers developers.", 
+    "Empathy Engineering: When we prioritize understanding user needs, ensuring technology solves real problems.", 
+    "Frontend Fun: Celebrating the creativity and technical skill that goes into crafting the user-facing side of our applications.", 
+    "Scaling Saga: When we share epic tales of growing from startup to tech titan without losing our coding soul.", 
+    "UX/UI Unveiling: The magical moment when a seamless user experience is revealed, a testament to the meticulous craft of designers and developers.", 
+    "Tech Education Enthusiasm: Encouragement for continuous learning and growth in the ever-changing landscape of technology.",
+
     "Code Scanning Celebrated: A shoutout to GitHub's code scanning feature, making security an integral part of the development process."
 ];
 
