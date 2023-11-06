@@ -30,7 +30,7 @@ var card_titles = [
     "Multi-Cloud Strategy Talk: For those who refuse to put all their eggs in one basket—or cloud, as it were.",
     "Feel-Good Moment: That one time we all remember we're human.",
     "Git Pun / Joke: We commit to making you groan.",
-    "Taylor Swift Reference: When a speaker's slide has a hidden Swiftie easter egg, because our love for coding might fade, but Swift lyrics are 'forever & always'.",
+    "Taylor Swift Reference: When a speaker's slide has a hidden Swiftie Easter egg, it's like our love for coding — Swift lyrics are 'forever & always'.",    
     "It's Not a Bug, It's a Feature: The unofficial motto of software development.",
     "Saying Developers More Than 1x: Steve Ballmer's spirit lives on.",
     "Cheesy Joke from a Keynote Speaker: Mandatory humor? Check.",
